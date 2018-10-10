@@ -859,3 +859,12 @@ a.aboutheader-bottum:hover{
 .add{
     color:white;
 }
+.headq{
+    display: flex;
+    flex-flow: column;
+margin: 0 auto;
+margin-bottom: 20px;
+}
+.formarea1{
+    display: flex;
+}
