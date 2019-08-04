@@ -1,221 +1,138 @@
+@font-face{
+	font-family:"Monaco";
+	src: url(fonts/Monaco.ttf);
+}	
 body{
-	font-family: 'Roboto', sans-serif;
-	color: #545E6C;
-	line-height: 1.5;
-	padding-top: 20px;
+	background: #222;
+	font-family:"Monaco", sans-serif;
 }
-ul, h1, h2, h3, h4{
-	margin: 0;
-	padding: 0;
+header{
+	height: 100vh;
 }
 .main-container{
-	 box-shadow: -2px 2px 10px 0 rgba(102, 102, 102, 0.5);
-}
-   /*...............................
-	   main GRID (2column)-START
-..................................*/
-.test{
-	color:#fff;
-	background: #7bc2d3;
-	box-shadow: -2px 1px 5px 0 rgba(36, 121, 140, .8);
-	padding-right: 0px; 
-    padding-left: 0px; 
-    text-align: center;
-}
-.wraper{
-	background: #f5f5f5;
-}
- /*................................
-	   main GRID (2column)-FINISH
-.................................*/
-
-/*.................................
-	first section(profile) - START
-..................................*/
-.section{
-	padding-left: 40px;
-	padding-right: 40px;
-	color: #000;
-	
-}
-.section__name{
-	padding-top: 50px;
-	display: flex;
-	align-items: center;
-	margin-bottom: 20px;
-}
-.section__name-circle{
-	width:30px;
-	height: 30px;
-	border-radius: 30px;
-	background: #24798c;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-right: 10px;
-}
-.section__name-title{
-	text-transform: uppercase;
-	font-size: 20px;
-	color:#24798c;
-	font-weight: 700;
-}
-.fas, .far, .bab{
-	font-size: 15px ;
-	color:#fff;
-}
-
-.section__text{
-    color: #545E6C;
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-.section__text-link{
-	text-decoration: none;
-	color: #2d7788;
-}
-.section__text-link:hover{
-	color:#000;
-	transition: all 0.4s ease-in-out;
-	
-}
-.section__text-link:visited{
-	color:#9131c4;
-}
-/*.................................
-	first section(profile) - FINISH
-..................................*/
-
-
-/*.................................
-	second section - START
-..................................*/
-.section__name-container{
-	display: flex;
-	justify-content: space-between; 	
-}
-.section__ocupation{
-	margin-bottom: 20px;
-}
-.title{
-	color: #3F4650;
-    font-size: 16px;
-    font-weight: 500;
-}
-.time{
-	color: #97AAC3;
-	font-size: 14px;
-}
-.section__name-location{
-	margin-bottom: 10px;
-    color: #97AAC3;	
-}
-/*.................................
-	second section - FINISH
-..................................*/
-
-
-/*.................................
-	last section - START
-..................................*/
-.container-item{
-margin-bottom: 10px;
-	overflow: hidden;
-}
-.lang-program{
-	font-size: 14px;
-	color: #3F4650;
-	font-weight: 700;
-	width:200px;
-	display: inline-block;
-	    display: inline-block;
-    float: left;
-    width: 30%;
-
-}
-.square{
-	width:30%;
-	height: 15px;
-	background: #7bc2d3;
-	float: left;
-
-
-}
-/*.................................
-	last section - FINISH
-..................................*/
-.footer__text{
-	color: #97AAC3;
-	font-size: 14px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-top: 1px solid #ccc;
-	text-align: center;
-}
-
-/*.................................
-	RIGHT MAIN COLUMN - START
-..................................*/
-.main-img{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	min-height: 300px;
-	background: #24798c;
-	margin-bottom: 40px;
+	justify-content:  center;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding-top: 60px;
+	background: #191919;
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
 }
-.main-img img{
-
+.main-title{
+	font-size: 40px;
+	margin-bottom: 50px;
+	color:#3df487;
+	
+	text-align: center;
+}
+.logo{
 	display: flex;
 	justify-content: center;
-	align-items: center;
 }
-h1{
-	font-size: 32px;
-	font-weight: 700;
+.description{
+	font-size: 25px;
+	color:#d7d7d7;
+	text-align: center;
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.button{
+	width:300px;
+	height: 80px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 10px;
+	font-size: 30px;
+	background-color:#252525;
+	border: none;
+	cursor: pointer;
+	color:#d7d7d7;
+	transition: 0.2s ease-out 0.1s
 
 }
-.ocupation{
-	font-size: 16px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.6);
+.button:hover{
+	color:#3df487;
+	background-color: #202020;
+	box-shadow: 0px 0px 5px 0px rgba(19, 19, 19, 1);
+
 }
-.column__item{
+.buttons{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 60px; 
 	margin-top: 80px;
 }
-.column__item-name{
-	margin-bottom: 20px;
-	text-transform: uppercase;
+.button-contact{
+	margin-left: 30px;
 }
-.column__item-text{
-	color: rgba(255, 255, 255, 0.6);
-}
-.container-icon{
+
+/*-------------- portfolio section---------------*/
+.portfolio-container{
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
-	margin-bottom: 20px;
+	margin-bottom: 60px;
 }
-.column-items{
-	margin-bottom: 0;
-	margin-left: 10px;
+.portfolio-link{
+	margin-right: 15px;
 }
-/*.................................
-	RIGHT MAIN COLUMN - FINISH
-..................................*/
+.portfolio-link:last-child{
+	margin-right: 0;
+}
+.title{
+	font-size: 35px;
+	text-align: center;
+	margin-bottom: 30px;
+	color:#d7d7d7;
+}
 
+/*-------------- portfolio section finish---------------*/
 
+.links-container{
+	list-style: none;
+	display: flex;
 
-/*............................
-			media
-.............................*/
-@media screen and (max-width: 767px) {
-	.test{
-		order: -1;
+}
+.links-container--item{
+	font-size: 25px;
+	color:#d7d7d7;
+	transition: 0.2s ease-out 0.1s
+
+}
+.links-container--item:hover{
+	color:#3df487;
+}
+a{
+	text-decoration: none;
+	color:#fff;
+	cursor: pointer;
+	margin-right: 30px;
+	transition: 0.2s ease-out 0.1s
+}
+a:hover{
+	color:#3df487;
+}
+@media (min-width: 320px) and (max-width: 730px) {
+	.description{
+		padding-right: 0;
+		padding-left: 0;
 	}
-	.lang-program{
-		display: block;
-		width:100%;
+	header{
+		height: auto;
+	}
+	.buttons{
+		flex-direction: column;
+		align-items: center;
+	}
+	.button-contact{
+	margin-left:0;
+	margin-top: 40px;
+	}
+	.portfolio-link{
+		margin-bottom: 15px;
 	}
 }
