@@ -39,7 +39,13 @@ header{
 	padding-right: 100px;
 	padding-left: 100px;
 }
-
+p span{
+	color:#e7c860;
+	font-size: 30px;
+}
+.skills{
+	color:#3df487;
+}
 .button{
 	width:300px;
 	height: 80px;
@@ -74,19 +80,24 @@ header{
 .portfolio-container{
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	margin-bottom: 60px;
+	justify-content: space-around;
+	margin-bottom: 100px;
 }
 .portfolio-link{
 	margin-right: 15px;
+	opacity: 0.5;
+	transition: 0.2s ease-out 0.1s;
 }
 .portfolio-link:last-child{
 	margin-right: 0;
 }
+.portfolio-link:hover{
+	opacity: 1;
+}
 .title{
 	font-size: 35px;
 	text-align: center;
-	margin-bottom: 30px;
+	margin-bottom: 80px;
 	color:#d7d7d7;
 }
 
@@ -95,6 +106,7 @@ header{
 .links-container{
 	list-style: none;
 	display: flex;
+	margin-bottom: 50px;
 
 }
 .links-container--item{
@@ -118,19 +130,34 @@ a:hover{
 }
 @media (min-width: 320px) and (max-width: 730px) {
 	.description{
+		font-size: 19px;
 		padding-right: 0;
 		padding-left: 0;
 	}
 	header{
 		height: auto;
 	}
-	.buttons{
+	a img{
+		width: 280px;
+	}
+	.main-title{
+		font-size: 35px;
+	}
+	.buttons,
+	.links-container{
 		flex-direction: column;
 		align-items: center;
+	}
+	.links-container--item{
+		font-size: 15px;
 	}
 	.button-contact{
 	margin-left:0;
 	margin-top: 40px;
+	}
+	.button{
+		
+		width: 290px;
 	}
 	.portfolio-link{
 		margin-bottom: 13px;
