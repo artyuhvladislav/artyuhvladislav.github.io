@@ -7,6 +7,9 @@ body{
 	font-family:"Monaco", sans-serif;
 }
 header{
+	display: flex;
+	flex-direction: column;
+	justify-content:  center;
 	height: 100vh;
 }
 .main-container{
@@ -82,6 +85,7 @@ p span{
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin-bottom: 100px;
+	height: 100vh;
 }
 .portfolio-link{
 	margin-right: 15px;
