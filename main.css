@@ -130,7 +130,7 @@ a{
 	color:#fff;
 	cursor: pointer;
 	
-	transition: 0.2s ease-out 0.1s
+	transition: 0.3s ease-out 0.1s
 }
 a:hover{
 	color:#3df487;
