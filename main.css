@@ -247,7 +247,9 @@ a:hover{
 }
 @media (min-width: 320px) and (max-width: 730px) {
 	.main-container{
-		width:90%;
+		width:100%;
+		margin-bottom: 0;
+		margin-top: 0;
 	}
 	.description{
 		font-size: 19px;
