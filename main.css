@@ -8,7 +8,7 @@ body{
 }
 header{
 	display: flex;
-flex-direction: column;
+	flex-direction: column;
 	justify-content:  center;
 	height: 100vh;
 }
@@ -17,7 +17,7 @@ flex-direction: column;
 	flex-direction: column;
 	align-items: center;
 	justify-content:  center;
-	width: 1200px;
+	width: 70%;
 	margin: 0 auto;
 	margin-top: 30px;
 	margin-bottom: 30px;
@@ -246,6 +246,9 @@ a:hover{
 	color:#3df487;
 }
 @media (min-width: 320px) and (max-width: 730px) {
+	.main-container{
+		width:90%;
+	}
 	.description{
 		font-size: 19px;
 		line-height: 1.5;
