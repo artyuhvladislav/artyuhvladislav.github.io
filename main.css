@@ -17,10 +17,10 @@ flex-direction: column;
 	flex-direction: column;
 	align-items: center;
 	justify-content:  center;
-	width: 90%;
+	width: 1200px;
 	margin: 0 auto;
 	margin-top: 30px;
-	padding-top: 20px;
+	margin-bottom: 30px;
 	background: #191919;
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
 }
@@ -38,7 +38,8 @@ flex-direction: column;
 .description{
 	font-size: 20px;
 	color:#d7d7d7;
-	text-align: center;
+	max-width: 800px;
+	line-height: 1.5;
 	padding-right: 100px;
 	padding-left: 100px;
 }
@@ -52,7 +53,8 @@ p span{
 .button{
 	width:300px;
 	height: 80px;
-	padding: 10px 10px 10px 10px;
+	
+	display: flex;
 	border-radius: 10px;
 	font-size: 25px;
 	background-color:#252525;
@@ -80,11 +82,17 @@ p span{
 }
 
 /*-------------- portfolio section---------------*/
+.portfolio{
+	width: 100%;
+	
+}
 .portfolio-container{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-bottom: 90px;
+	
+	margin: 0 auto;
+	width: 90%;
 	
 }
 .portfolio-link{
@@ -101,9 +109,105 @@ p span{
 .title{
 	font-size: 35px;
 	text-align: center;
-	margin-bottom: 80px;
+/*	margin-bottom: 80px;*/
 	color:#d7d7d7;
 }
+/*-------------- card section ---------------*/
+.portfolio-container .card .face{
+    width:300px;
+    height: 200px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.portfolio-container .card .face.face1{
+    position: relative;
+    background: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+.portfolio-container .card:hover .face.face1{
+    transform: translateY(0);
+    background: #3df487;
+}
+.portfolio-container .card .face.face2{
+    position: relative;
+  
+    display: flex;
+    justify-content: center;
+  
+    box-sizing: border-box;
+   
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+.portfolio-container .card:hover .face.face2{
+    transform: translateY(0);
+}
+.portfolio-container .card .face.face1 .content{
+    opacity: 0.5;
+    transition: 0.5s;
+    position: relative;
+}
+.portfolio-container .card .face.face1 .content img{
+	width:100px;
+}
+.portfolio-container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+.portfolio-container .card .face .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color:#d7d7d7;
+    text-align: center;
+}
+
+.portfolio-container .card .face.face2 .content::after{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.8); 
+}
+.portfolio-container .card .face.face2 .content img{
+	position: relative;
+	max-width: 300px;
+	height: 100%;
+}
+
+.portfolio-container .card .face .content a{
+    text-decoration: none;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 15px 0 0;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid #d7d7d7;
+   color:#3df487;
+   
+    font-weight: 900;
+    display: block;
+    z-index: 2;
+    transition: 0.5s;
+    min-width: 150px;
+    text-align: center;
+}
+.portfolio-container .card .face .content p{
+	font-weight: 400;
+	font-size: 20px;
+}
+.portfolio-container .card .face .content a:hover{
+    background: #191919;
+    color: #d7d7d7;
+}
+
 
 /*-------------- portfolio section finish---------------*/
 
@@ -125,11 +229,17 @@ p span{
 .links-container--item a{
 	margin-right: 30px;
 }
+.button a{
+	display: block;
+	width: 100%;
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
 a{
 	text-decoration: none;
-	color:#fff;
+	color:#d7d7d7;
 	cursor: pointer;
-	
+	display: inline-block;
 	transition: 0.3s ease-out 0.1s
 }
 a:hover{
@@ -139,8 +249,9 @@ a:hover{
 	.description{
 		font-size: 19px;
 		line-height: 1.5;
-		padding-right: 0;
-		padding-left: 0;
+		padding-right: 15px;
+		padding-left: 15px;
+		text-align: left;
 	}
 	header{
 		height: auto;
