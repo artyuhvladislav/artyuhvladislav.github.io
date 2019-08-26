@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 70 70" style="enable-background:new 0 0 70 70;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EFF1FA;}
+	.st1{fill:#626679;}
+</style>
+<g id="corridor">
+	<g id="Эллипс_714_копия">
+		<path class="st0" d="M35,0C15.7,0,0,15.7,0,35s15.7,35,35,35s35-15.7,35-35S54.3,0,35,0L35,0z"/>
+	</g>
+	<g id="Прямоугольник_1021">
+		<path class="st1" d="M48,16v40H22V16H48 M50,14H20v44h30V14L50,14z"/>
+	</g>
+	<g id="Прямоугольник_1021_копия">
+		<path class="st1" d="M44,16v40H26V16H44 M46,14H24v44h22V14L46,14z"/>
+	</g>
+	<g id="Прямоугольник_1023">
+		<polygon class="st1" points="31,34 23,34 23,36 31,36 		"/>
+	</g>
+</g>
+</svg>
