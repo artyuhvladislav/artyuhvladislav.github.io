@@ -64,8 +64,9 @@ input[type="button"] {
 						HEADER
 ===========================================================*/
 .main-header{
-	background: url(../img/header-bg.svg) no-repeat;
-	background-position: right -15% top 0;
+	background: url(../img/header-bg.svg) no-repeat top center;
+	background-position: right 10% top 0;
+	height: 100vh;
 }
 .header-top{
 	padding-top: 40px;
@@ -85,11 +86,12 @@ input[type="button"] {
 	width:20px;
 	margin-right: 8px;
 }
-.location__text{
+.main-header .location__text{
   font-size: 16px;
   font-family: 'Rubik-Regular';
   color: rgb(255, 255, 255);
   line-height: 1.2;
+  margin-bottom: 0;
 }
 .phone-numbers{
   font-size: 16px;
@@ -102,6 +104,7 @@ input[type="button"] {
 }
 .contacts>a{
 	right: 0;
+	margin-right: 20px;
 }
 .contacts>a>img{
 	width: 30px;
@@ -175,6 +178,10 @@ input[type="button"] {
 	  font-family: "Montserrat";
 	  color: rgb(231, 47, 42);
 	  line-height: 1.2;
+}	
+.top-slider.owl-drag > div.owl-nav.disabled > button.owl-prev,
+.top-slider.owl-drag > div.owl-nav.disabled > button.owl-next{
+	display:none;
 }
 /*==========================================================
 						SECTION WORK
@@ -430,7 +437,7 @@ input[type="button"] {
 	text-align: center;
 }
 .owl-carousel.gallery-slider .owl-item img{
-	width: 818px;
+	width: 100%;
 	height: 565px;
 }
 .gallery-text{
@@ -440,7 +447,7 @@ input[type="button"] {
   font-family: "Rubik-Regular";
   color: rgb(98, 102, 121);
   line-height: 1.2;
-  margin-top: 60px;
+ padding-top: 60px;
   margin: 0 auto;
 }
 .btn-gallery{
@@ -459,6 +466,9 @@ input[type="button"] {
 		margin:0 auto;
 	opacity: 1;
 }
+.btn-qustion:hover{
+	border:2px solid  #e7312a;
+}
 
 /*==========================================================
 						SECTION REPLY
@@ -469,9 +479,10 @@ input[type="button"] {
 .reply-section .content{
 	grid-template-columns: 1fr;
 } 
-.tabs-row{
+.reply-section .tabs-row{
 	display: flex;
 	justify-content: center;
+	margin-bottom: 60px;
 }
 .tabs-row li{
 	margin-right: 225px;
@@ -489,6 +500,7 @@ input[type="button"] {
 	grid-gap: 60px;
 }
 .author-name{
+	margin-top: 40px;
   font-size: 24px;
   font-family: "Montserrat";
   color: rgb(5, 17, 51);
@@ -763,6 +775,9 @@ input[type="number"]{
 .example-icon{
 	width:70px;
 }
+.example-section > .tabs-row{
+	display: flex;
+}
 .tabs-row .tabs-row-item{
 	margin-right:70px;
 	border:none;
@@ -814,6 +829,10 @@ input[type="number"]{
 	background: #eff1fa;
 
 }
+.info-section .box-section__title{
+	margin-bottom: 30px;
+	max-width:900px;
+}
 .info-section-text{
   font-size: 28px;
   font-family: "Montserrat";
@@ -841,6 +860,9 @@ input[type="number"]{
 /*==========================================================
 						VIDEO SECTION
 ===========================================================*/
+.video-section .tabs-row{
+	display: flex;
+}
 body > section.box-section.video-section > div > div > ul > li.active,
 body > section.box-section.video-section > div > div > ul > li{
 
@@ -906,19 +928,14 @@ body > section.box-section.video-section > div > div > ul > li:last-child{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
-.text-number{
-  font-size: 24px;
-  font-family: "Montserrat";
-  color: rgb(255, 255, 255);
-  line-height: 1.2;
-  text-align: center;
-}
+
 .sizing-section p{
   font-size: 18px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 30px;
 
 }
 .work-time{
@@ -927,10 +944,331 @@ body > section.box-section.video-section > div > div > ul > li:last-child{
   color: rgba(255, 255, 255, 0.4);
   line-height: 2;
   text-align: center;
+  opacity:0.4;
+  margin-bottom: 45px;
  }
+.text-number{
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 15px;
+}
 
+/*==========================================================
+						COMFORT SECTION
+===========================================================*/
+.comfort-section{
+	padding-bottom: 110px;
+}
+.comfort-section .box-section__title{
+	max-width: 650px;
+}
+.comfort-section .tabs-row{
+	display: flex;
+}
+.light-box{
+	background: #eff1fa;
+padding:50px 100px;
+}
+.light-box__title{
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(5, 17, 51);
+  line-height: 0.8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.light-box__description{
 
+  font-size: 24px;
+  font-family: "Rubik-Regular";
+  color: rgb(5, 17, 51);
+  line-height: 1.5;
+  text-align: center;
+}
+.light-box__img{
+display: inline-block;
+margin-right: 10px;
+width:50px;
+}
+.light-box__text{
+  font-size: 16px;
+  font-family: "Rubik-Regular";
+  color: rgb(98, 102, 121);
+  line-height: 1.2;
+display: inline-block;
+max-width:540px;
+}
 
+.light-img{
+	width:
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+.light-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 50px;
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+
+.light-img-title{
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(5, 17, 51);
+  line-height: 1;
+  text-align: center;
+}
+.light-img-text{
+  font-size: 16px;
+  font-family: "Rubik-Regular";
+  color: #626679;
+  line-height: 1;
+  text-align: center;
+}
+.btn-light-box{
+	box-sizing: border-box;
+max-width: 470px;
+margin: 0 auto;
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgb(231, 49, 42);
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+height: 25px;
+}
+.btn-light-box:hover{
+	border-bottom: 1px dashed rgb(231, 49, 42) ;
+}
+/*==========================================================
+						SALE SECTION
+===========================================================*/
+.sale-section{
+	background: url('../img/bg.jpg') no-repeat top;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.sale-form{
+	background: #fff;
+	max-width:520px;
+	margin-left: auto;
+}
+.sale-form form{
+	padding: 50px;
+}
+.sale-form__title{
+  font-size: 36px;
+  font-family: "Montserrat";
+  color: rgb(5, 17, 51);
+  line-height: 1.111;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sale-form__text{
+	text-align: left;
+	margin-bottom: 40px;
+  font-size: 16px;
+  font-family: "Rubik-Regular";
+  color: rgb(98, 102, 121);
+  line-height: 1.5;
+
+}
+.btn-sale{
+	width:395px;
+	margin-top: 20px;
+	opacity:0.7;
+}
+.btn-sale:hover{
+	opacity:1;
+}
+.form-sale__btn{
+	max-width:400px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 10px;
+
+    border: none;
+    cursor: pointer;
+    height: auto;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -moz-border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -khtml-border-radius: 55px;
+    border-radius: 55px;
+    background: #eff0f5;
+    text-align: center;
+    padding: 20px 40px;
+    margin: 0 auto;
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgba(98, 102, 121, 0.502);
+  line-height: 1;
+}
+/*==========================================================
+						OFTEN-Q SECTION
+===========================================================*/
+.oftenq-section{
+	background: #fff;
+	padding-top: 90px;
+	padding-bottom: 75px;
+	color:#fff;
+}
+.oftenq-section .box-section__title{
+	color: #fff;
+	text-align: center;
+}
+.oftenq-section .tabs-column{
+	display: flex;
+	flex-direction: column;
+}
+
+/*==========================================================
+						FOOTER
+===========================================================*/
+footer{
+	padding-top: 70px;
+	padding-bottom: 70px;
+background: url('../img/Эллипс 1143.svg') no-repeat bottom center;
+
+}
+.footer-title{
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 160px;
+
+}
+.footer-text{
+  font-size: 16px;
+  font-family: "Rubik-Regular";
+  color: rgba(255, 255, 255, 0.702);
+  line-height: 1.5;
+  text-align: center;
+margin-bottom: 30px;
+}
+footer .container{
+	margin: 0 auto;
+}
+.footer-row{
+	display: flex;
+	flex-wrap:wrap;
+	margin-bottom: 70px;
+	justify-content: center;
+}
+
+.btn-footer{
+	background: #fff;
+	border:2px solid rgb(231, 49, 42);
+	width:220px;
+
+}
+
+.form-sale__btn-footer{
+	text-align: left;
+		max-width:400px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 10px;
+    border: none;
+    cursor: pointer;
+    height: auto;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -moz-border-radius: 55px;
+    -webkit-border-radius: 55px;
+    -khtml-border-radius: 55px;
+    border-radius: 55px;
+    background: #eff0f5;
+    text-align: center;
+    
+   
+  font-size: 24px;
+  height: 60px;
+  font-family: "Montserrat";
+  color: rgba(98, 102, 121, 0.502);
+  line-height: 0.2;
+
+}
+.btn-footer{
+	height: 60px;
+	background: rgb(231, 49, 42);;
+	 font-size: 16px;
+	 color:#fff;
+	 border: 2px solid #fff;
+	 margin-left: 20px;
+	 margin-right: 0;
+}
+.btn-footer:hover{
+	background: #fff;
+	color: rgb(231, 49, 42);
+}
+
+footer div.logo{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 35px;
+}
+.location__text{
+	text-align: center;
+  font-family: "Rubik-Regular";
+  color: rgb(5, 17, 51);
+  line-height: 1.25;
+  margin-bottom: 35px;
+}
+.time-work{
+  font-size: 16px;
+  font-family: "Rubik-Regular";
+  color: rgb(98, 102, 121);
+  line-height: 1.5;
+  text-align: center;
+margin-bottom: 45px;
+}
+.phone-number {
+  font-size: 26px;
+  font-family: "Rubik-Light";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
+ }
+footer .contacts{
+	display: flex;
+	justify-content: center;
+}
+footer .contacts a{
+	margin-right: 15px;
+}
+footer .contacts a:last-child{
+	margin-right: 0;
+}
+.copy{
+  font-size: 14px;
+  font-family: "Rubik-Regular";
+  color: rgba(255, 255, 255, 0.302);
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 30px;
+}
+hr{
+	opacity:0.5;
+}
 
 
 
@@ -969,181 +1307,25 @@ body > section.box-section.video-section > div > div > ul > li:last-child{
 
 /*============================================================================
 ===============================MEDIA QURIES START=======================*/
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	section.work h2{
-		font-size: 30px;
-	}
-	.work-item--text{
-		text-align: center;
-	}
-	.work-item:last-child{
-		width:auto;
-	}
-	.arrow-second,
-	.arrow{
-		display: none;
-	}
-	.work .row{
-		grid-template-columns: 1fr;
-		min-height: 300px;
-	
-	}
-	.bottom-navigation,
-	.main-navigation{
-		display: none;
-	}
-	.header-top {
-	    display: grid;
-	    grid-template-columns: 1fr;
-	    margin-bottom: 25px;
-	}
-	.header-top .search {
-    	width: 90%;
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+	.header-top{
+		grid-template-columns:  1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 	.logo img{
-		width:120px;
-	}
-	.navigation ul {
-	    padding-top: 8px;
-	    display: grid;
-	   
-	    grid-template-columns: 1fr;
-	    justify-content: center;
-	    align-items: center;
-	    list-style: none;
-	}
-	.navigation-item,
-	.navigation-item:last-child,
-	.navigation-item:first-child {
-    
-   margin: 0 auto;
-   margin-bottom: 10px;
+	width:200px;
 }
-	section.slider {
-    	display: none;
-    }
-	.cost-lg {
-	    font-family: 'PF Agora Sans Pro';
-	    font-size: 25px;
-	    color: #000;
-	}
-	.users-response {
-    
-    padding-left: 0;
-    font-size: 14px;
-    margin-top: 35px;
-}
-	.content-block {
-   
-    padding-left: 8px;
-    padding-right: 8px;
+.location{
+	display: none;
+	
 }
 
-	.owl-carousel .owl-item img {
-   		 margin: 0 auto;
-	}
-	.motel-name {
-	    margin-top: 15px;
-	    text-align: center;
-	}
-	.section-box-content .row  div h2{
-		font-size: 22px;
-	}
-	.section-box-content .row{
-		flex-wrap: wrap;
-	}
-	.section-box-content .btn-link{
-		margin-top: 20px;
-	}
-	.section-box h2{
-		font-size: 22px;
-	}
-	/*section about*/
-	.left-column .item-title {
-	    font-size: 30px;
-	}
-	.about .container .left-column {
-	    font-size: 16px;
-	    line-height: 1.4;
-	    padding-bottom: 35px;
-	}
-	.btn-link{
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 25px;
-	}
-
-.btn-link-pay{
-	display: block;
-		margin: 0 auto;
-
+.phone-numbers{
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
 }
-	.about-sidebar{
-		max-width:250px;
-		padding: 25px;
-		margin: 0 auto;
-	}
-	.about-sidebar h2{
-		font-size: 22px;
-	}
-	.about-sidebar .line,
-	.about-sidebar h2{
-   		margin-bottom: 20px;
-	}
-	.about .container{
-		grid-template-columns: 1fr;
-		justify-content: center;
-		position: static;
-	}
-	.about-sidebar{
-		position: static;
-	}
-	.about .container::before,
-	.about .container::after{
-		display: none;
-	}
-	/*section service*/
-	section.service{
-		padding-top: 65px;
-		padding-bottom: 65px;
-		color:#4c4c4c;
-		font-family: 'Geometria';
-	}
-	section.service h2{
-		font-size: 18px;
-		font-family: 'Geometria';
-		font-weight: 600;
-		margin-bottom: 25px;
-	}
-	section.service p{
-		font-size: 16px;
-	    line-height: 1.4;
-	    font-weight: 400;
-	}
-
-	/*footer*/
-	footer .container .row{
-		justify-content: center;
-		grid-template-columns: 1fr;
-
-	}
-	.contact-phone{
-		font-size: 14px;
-	}
-	.footer-item{
-		font-size: 12px;
-		min-width:150px;
-		margin-bottom: 20px;
-	}
-	.footer-item li a{
-		font-size: 12px;
-	}
-	.footer-btn{
-		font-size: 14px;
-		padding: 10px 12px;
-		width: 150px;
-		margin: 0 auto;
-	}
 }
 @media only screen and (min-device-width : 481px) and (max-device-width : 760px) {
 		.bottom-navigation,
