@@ -22,6 +22,27 @@ $(document).ready(function(){
   	autoplay:true,
     autoplayTimeout:5000,
     autoplayHoverPause:true,
+        responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false
+        },
+        480:{
+            items:3,
+           
+        },
+        1001:{
+            items:3,
+            
+        },
+         1100:{
+            items:3,
+           
+        }
+
+    }
+
     
   })
 });
