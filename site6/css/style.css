@@ -766,6 +766,9 @@ input[type="number"]{
 .example-section{
 	padding-bottom: 160px;
 }
+.example-section .tabs-row{
+  display: flex;
+}
 .example-section .box-section__title{
 	max-width: 720px;
 	text-align: center;
