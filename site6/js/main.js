@@ -101,7 +101,8 @@ $(document).ready(function(){
   $(".gallery-slider").owlCarousel({
     items: 1,
     loop: false,
-       
+    dots: false,
+    nav: false
   })
 });
 $(document).ready(function(){
@@ -109,7 +110,7 @@ $(document).ready(function(){
     items: 1,
     loop: false,
      dots: false,
-     nav: false  
+     nav: true  
   })
 });
 $(document).ready(function(){
@@ -188,3 +189,36 @@ $(function() {
                 zoom: 18
             });
         }
+$(document).on('click', '.open', function(){
+  $(this).siblings('.count').toggleClass('hide');
+  $(this).children('.open2').toggleClass('close');
+  
+});
+// $(document).on('click', '.open', function(){
+//   $(this).toggleClass('close');
+// });
+
+
+
+$('.show_popup').click(function() { // Вызываем функцию по нажатию на кнопку 
+    var popup_id = $('#' + $(this).attr("rel")); // Связываем rel и popup_id 
+    $(popup_id).show(); // Открываем окно
+    $('.overlay_popup').show(); // Открываем блок заднего фона
+})
+$('.close-pop').click(function() { // Обрабатываем клик по заднему фону
+    $('.overlay_popup, .popup').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
+}) 
+$('.overlay_popup').click(function() { // Обрабатываем клик по заднему фону
+    $('.overlay_popup, .popup').hide(); // Скрываем затемнённый задний фон и основное всплывающее окно
+})
+
+
+
+
+
+
+
+$(document).ready(function(){
+$('.gallery a.gal').touchTouch();
+$().UItoTop({ easingType: 'easeOutQuart' });
+});

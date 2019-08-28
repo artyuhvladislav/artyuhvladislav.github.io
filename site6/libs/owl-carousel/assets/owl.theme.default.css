@@ -59,50 +59,53 @@
   opacity: 0.8;
 }
 /*=============sbuttons prev next BIG SLIDER================*/
-.owl-carousel.section-slide .owl-nav button.owl-prev{
+
+.material-section .owl-carousel .owl-nav button.owl-prev{
   position: absolute;
   cursor: pointer;
   background:rgba(253, 144, 103, 0.8);
   color: #fff;
-  width:25px;
-  height: 25px;
+  width:40px;
+  height: 40px;
   border-radius: 50%;
-  top: 30%;
-  left: 12px;
+  top: 10%;
+  left: -5%;
 }
-.owl-carousel.section-slide .owl-nav button.owl-next{
+.material-section .owl-carousel .owl-nav button.owl-next{
    position: absolute;
    cursor: pointer;
   background:rgba(253, 144, 103, 0.8);
   color: #fff;
-  width:25px;
-  height: 25px;
+ width:40px;
+  height: 40px;
   border-radius: 50%;
-  top: 30%;
-  right:12px;
+  top: 10%;
+  right:-5%;
 }
 
 /*=============sbuttons prev next SMALL SLIDER================*/
-.owl-carousel.small-slide .owl-nav button.owl-prev{
+.owl-carousel .owl-nav button.owl-prev{
   position: absolute;
   cursor: pointer;
   background:rgba(253, 144, 103, 0.8);
   color: #fff;
-  width:25px;
-  height: 25px;
+  width:50px;
+  height: 50px;
+
   border-radius: 50%;
-  top: 25%;
-  left: -18px;
+  top: 50%;
+  left: 0;
+   transform: translateY(-50%);
 }
 .owl-carousel .owl-nav button.owl-next{
    position: absolute;
    cursor: pointer;
   background:rgba(253, 144, 103, 0.8);
   color: #fff;
-  width:25px;
-  height: 25px;
+  width:50px;
+  height: 50px;
   border-radius: 50%;
- top: 25%;
-  right: 0px;
-
+ top: 50%;
+  right: 0;
+  transform: translateY(-50%);
 }
