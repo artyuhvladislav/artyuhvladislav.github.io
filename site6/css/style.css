@@ -70,7 +70,7 @@ input[type="button"] {
 ===========================================================*/
 .main-header{
 	color:#000;
-	background-position: right 10% top 0;
+	
 	
 	padding-bottom: 60px;
 }
@@ -1247,7 +1247,7 @@ footer .container{
 		max-width:400px;
     display: block;
     text-decoration: none;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     border: none;
     cursor: pointer;
     height: auto;
@@ -1575,7 +1575,7 @@ hr{
 }
 	.main-header{
 	
-	height: 100vh;
+	
 	padding-bottom: 60px;
 }
 	.header-top{
@@ -2127,7 +2127,6 @@ footer{
 @media only screen and (min-device-width : 768px) and (max-device-width : 959px) {
 		.main-header{
 	
-	height: 100vh;
 	padding-bottom: 60px;
 }
 	.header-top{
@@ -2414,9 +2413,8 @@ grid-template-columns: 1fr 1fr;
   	display: block;
  	margin: 0 auto;
   }
-  .bg-grow{
-  	background: #eff1fa;
-  	padding: 10px;
+
+
   }
   .surprise{
   	margin-bottom: 10px;
@@ -2466,67 +2464,4 @@ textarea {
 }
 
 
-
-/* Стили для нашей кнопки */
-
-
-
-/*button:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-  box-shadow: 0px 1px 0px 0px;
-}
-
-button:focus {
-  outline: none !important
-}
-
-/* Стили для содержимого popup окна */
-/*
-input, textarea {
-  color: #494949;
-  border: 1px solid #e3e3e3;
-  border-radius: 3px;
-  background: #fff;
- 
-  margin: 0 0 10px;
-  padding: 5px;
-  width: 100%;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-}
-*/
-/*input:focus {
-  border-color: #808080;
-  outline: none;
-}
-
-textarea:focus {
-  border-color: #808080;
-  outline: none;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-  .photo .container{
-  	display: grid;
-  	grid-template-columns: 1fr 1fr 1fr;
-  	grid-gap: 20px;
-  }*/
-/*  .photo .container img {
-  	width: 280px;
-  }
-*/
 
