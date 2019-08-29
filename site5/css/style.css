@@ -200,6 +200,7 @@ header{
 	height: 40px;
 	border: 1px solid #c2c2c2;
 	border-right: none;
+	padding-left: 10px;
 }
 .search-button{
 	width:60px;
@@ -882,7 +883,7 @@ footer .container .row{
 	opacity: 0.3;
 }
 .footer-social img{
-	width:40px;
+	width:20px;
 	margin-left: 12px;
 	opacity: 0.7;
 }
@@ -1052,6 +1053,8 @@ footer .container .row{
 	}
 	.logo img{
 		width:120px;
+		display: block;
+		margin: 0 auto;
 	}
 	.navigation ul {
 	    padding-top: 8px;
@@ -1068,6 +1071,20 @@ footer .container .row{
     
    margin: 0 auto;
    margin-bottom: 10px;
+}
+.right-left-bordered{
+	 border: none;
+}
+.header-top form{
+	margin: 0 auto;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	width: 300px;
+
+}
+.select-wrapper{
+	display: block;
+	margin: 0 auto;
 }
 	section.slider {
     	display: none;
@@ -1174,7 +1191,7 @@ footer .container .row{
 	/*footer*/
 	footer .container .row{
 		justify-content: center;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 
 	}
 	.contact-phone{
@@ -1201,8 +1218,9 @@ footer .container .row{
 		display: none;
 	}
 	.header-top {
-	    display: grid;
-	    grid-template-columns:1fr;
+	    display: flex;
+	   justify-content: center;
+	   flex-wrap: wrap;
 	    margin-bottom: 25px;
 	}
 	.header-top .search {
@@ -1210,6 +1228,7 @@ footer .container .row{
 	}
 	.logo img{
 		width:120px;
+		margin-right: 15px;
 	}
 	.navigation ul {
 	    padding-top: 8px;
@@ -1227,6 +1246,21 @@ footer .container .row{
    margin: 0 auto;
    margin-bottom: 10px;
 }
+.right-left-bordered{
+	 border: none;
+}
+.header-top form{
+	margin: 0 auto;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	width: 450px;
+
+}
+.select-wrapper{
+	display: block;
+	margin: 0 auto;
+}
+
 	section.slider {
     	display: none;
     }
@@ -1349,7 +1383,7 @@ footer .container .row{
 		/*footer*/
 	footer .container .row{
 		justify-content: center;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 
 	}
 	.contact-phone{
@@ -1366,7 +1400,7 @@ footer .container .row{
 	.footer-btn{
 		font-size: 16px;
 		padding: 10px 12px;
-		width: 250px;
+		width: 200px;
 		margin: 0 auto;
 	}
 }	
@@ -1406,6 +1440,9 @@ footer .container .row{
     
    margin: 0 auto;
    margin-bottom: 10px;
+}
+.right-left-bordered{
+	 border: none;
 }
 	section.slider {
     	display: block;
