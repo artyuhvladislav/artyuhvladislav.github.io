@@ -181,11 +181,14 @@ var total = $('.flex-control-nav li').length;
 
 
 
-
 $(window).on('load', function(){
   $('.preloader').delay(500).fadeOut('slow');
 })
 
+function videoplay(button) {
+  var par = button.parentNode;
+  par.innerHTML = '<iframe width="290" height="200" src="https://www.youtube.com/embed/FeRO2x-FXzc" frameborder="0" allowfullscreen></iframe>';
+}
 
 
 
