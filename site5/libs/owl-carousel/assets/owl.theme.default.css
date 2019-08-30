@@ -6,7 +6,7 @@
 /*
  * 	Default theme - Owl Carousel CSS File
  */
-.owl-theme .owl-nav {
+ .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: center;
   -webkit-tap-highlight-color: transparent; }
@@ -23,87 +23,87 @@
       background: #869791;
       color: #FFF;
       text-decoration: none; }
-  .owl-theme .owl-nav .disabled {
-    opacity: 0.5;
-    cursor: default; }
+      .owl-theme .owl-nav .disabled {
+        opacity: 0.5;
+        cursor: default; }
 
-.owl-theme .owl-nav.disabled + .owl-dots {
-  margin-top: 10px; }
+        .owl-theme .owl-nav.disabled + .owl-dots {
+          margin-top: 10px; }
 
-.owl-theme .owl-dots {
-  text-align: center;
-  -webkit-tap-highlight-color: transparent; }
-  .owl-theme .owl-dots .owl-dot {
-    display: inline-block;
-    zoom: 1;
-    *display: inline; }
-    .owl-theme .owl-dots .owl-dot span {
-      width: 15px;
-      height: 15px;
-      margin: 5px 10px;
-      border: 1px solid #fff;
-      display: block;
-      -webkit-backface-visibility: visible;
-      transition: opacity 200ms ease;
-      border-radius: 30px; }
-    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-      background: #fff; }
-.owl-theme .owl-dots{
-  position: absolute;
-  bottom: 0;
-  widows: 100%;
-  margin: 0 auto;
-}
+          .owl-theme .owl-dots {
+            text-align: center;
+            -webkit-tap-highlight-color: transparent; }
+            .owl-theme .owl-dots .owl-dot {
+              display: inline-block;
+              zoom: 1;
+              *display: inline; }
+              .owl-theme .owl-dots .owl-dot span {
+                width: 15px;
+                height: 15px;
+                margin: 5px 10px;
+                border: 1px solid #fff;
+                display: block;
+                -webkit-backface-visibility: visible;
+                transition: opacity 200ms ease;
+                border-radius: 30px; }
+                .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+                  background: #fff; }
+                  .owl-theme .owl-dots{
+                    position: absolute;
+                    bottom: 0;
+                    widows: 100%;
+                    margin: 0 auto;
+                  }
 
-.owl-theme .owl-nav [class*='owl-']:hover {
-  background: #302d57;
-  opacity: 0.8;
-}
-/*=============sbuttons prev next BIG SLIDER================*/
-.owl-carousel.section-slide .owl-nav button.owl-prev{
-  position: absolute;
-  cursor: pointer;
-  background:rgba(253, 144, 103, 0.8);
-  color: #fff;
-  width:25px;
-  height: 25px;
-  border-radius: 50%;
-  top: 30%;
-  left: 12px;
-}
-.owl-carousel.section-slide .owl-nav button.owl-next{
-   position: absolute;
-   cursor: pointer;
-  background:rgba(253, 144, 103, 0.8);
-  color: #fff;
-  width:25px;
-  height: 25px;
-  border-radius: 50%;
-  top: 30%;
-  right:12px;
-}
+                  .owl-theme .owl-nav [class*='owl-']:hover {
+                    background: #302d57;
+                    opacity: 0.8;
+                  }
+                  /*=============sbuttons prev next BIG SLIDER================*/
+                  .owl-carousel.section-slide .owl-nav button.owl-prev{
+                    position: absolute;
+                    cursor: pointer;
+                    background:rgba(253, 144, 103, 0.8);
+                    color: #fff;
+                    width:25px;
+                    height: 25px;
+                    border-radius: 50%;
+                    top: 30%;
+                    left: 12px;
+                  }
+                  .owl-carousel.section-slide .owl-nav button.owl-next{
+                   position: absolute;
+                   cursor: pointer;
+                   background:rgba(253, 144, 103, 0.8);
+                   color: #fff;
+                   width:25px;
+                   height: 25px;
+                   border-radius: 50%;
+                   top: 30%;
+                   right:12px;
+                 }
 
-/*=============sbuttons prev next SMALL SLIDER================*/
-.owl-carousel.small-slide .owl-nav button.owl-prev{
-  position: absolute;
-  cursor: pointer;
-  background:rgba(253, 144, 103, 0.8);
-  color: #fff;
-  width:25px;
-  height: 25px;
-  border-radius: 50%;
-  top: 25%;
-  left: -18px;
-}
-.owl-carousel .owl-nav button.owl-next{
-   position: absolute;
-   cursor: pointer;
-  background:rgba(253, 144, 103, 0.8);
-  color: #fff;
-  width:25px;
-  height: 25px;
-  border-radius: 50%;
- top: 25%;
-  right: 0px;
+                 /*=============sbuttons prev next SMALL SLIDER================*/
+                 .owl-carousel.small-slide .owl-nav button.owl-prev{
+                  position: absolute;
+                  cursor: pointer;
+                  background:rgba(253, 144, 103, 0.8);
+                  color: #fff;
+                  width:25px;
+                  height: 25px;
+                  border-radius: 50%;
+                  top: 25%;
+                  left: -18px;
+                }
+                .owl-carousel .owl-nav button.owl-next{
+                 position: absolute;
+                 cursor: pointer;
+                 background:rgba(253, 144, 103, 0.8);
+                 color: #fff;
+                 width:25px;
+                 height: 25px;
+                 border-radius: 50%;
+                 top: 25%;
+                 right: 0px;
 
-}
+               }
