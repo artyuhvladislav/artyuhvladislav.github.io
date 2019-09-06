@@ -57,8 +57,8 @@
                   }
                   body > header > div > div.top-slider.owl-drag > div.owl-nav > button.owl-prev{
                     position: absolute;
-                    bottom: -8%;
-                    left: -1.5%;
+                    bottom: 16px;
+                    left: 15px;
                     cursor: pointer;
                     background: none;
                     color:#fff;
@@ -66,8 +66,8 @@
                   }
                   body > header > div > div.top-slider.owl-drag > div.owl-nav > button.owl-next{
                     position: absolute;
-                    bottom: -8%;
-                    left: 8%;
+                    bottom: 16px;
+                    left: 115px;
                     cursor: pointer;
                     background: none;
                     color:#fff;
@@ -104,22 +104,22 @@
                   cursor: pointer;
                   background:#e72f2a;
                   color: #fff;
-                  width:40px;
-                  height: 40px;
-
+                  width:60px;
+                  height: 60px;
+                  font-size: 20px;
                   border-radius: 50%;
                   top: 40%;
-                  left: -60px;
+                  left: -100px;
                 }
                 .owl-carousel.material-slider .owl-nav button.owl-next{
                  position: absolute;
                  cursor: pointer;
                  background:#e72f2a;
                  color: #fff;
-                 width:40px;
-                 height: 40px;
-
+                 width:60px;
+                 height: 60px;
+                 font-size: 20px;
                  border-radius: 50%;
                  top: 40%;
-                 right:-60px;
+                 right:-100px;
                }

@@ -1,6 +1,6 @@
 (function($) {
   $(function() {
-    $("ul.tabs__caption").on("click", "li:not(.active)", function() {
+    $("ul.tabs__caption").on("click",  "li:not(.active)", function() {
       $(this)
       .addClass("active")
       .siblings()
@@ -16,10 +16,24 @@
 
 $(document).ready(function(){
   $(".gallery-slider").owlCarousel({
-    items: 1,
-    loop: false,
+    items:2,
+    stagePadding: 50,
+    center: true,
+    loop:true,
+    margin:10,
     dots: true,
-    nav:true
+    nav:true,
+    responsiveClass:true,
+    responsive:{
+      0:{
+        items:1,
+        nav: false
+      },
+      600:{
+        item:1,
+        nav:false
+      }
+    }
   })
 });
 
@@ -31,13 +45,42 @@ $(document).ready(function(){
     nav: true  
   })
 });
+// $(document).ready(function(){
+//   $(".box-slider").owlCarousel({
+//     items: 1,
+//     itemsCustom : false,
+//     itemsDesktop : [1199,1],
+//     loop: false,
+//     dots: false,
+//     nav: true  
+//   })
+// });
+$('li').click() ;   
+$("#owl-demo2").owlCarousel({
+  nav : true,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:3
+    }
+  }
+});
+
+
 
 $(document).ready(function(){
   $(".top-slider").owlCarousel({
   	items: 3,
   	loop: false,
+    stagePadding: -20,
     dots: false,
     nav: true,
+
     onInitialized: counter,
     onChanged: counter,
     autoplay:true,
@@ -55,6 +98,7 @@ $(document).ready(function(){
       },
       962:{
         items:3,
+
         nav: true
       }
     }
@@ -181,6 +225,7 @@ var total = $('.flex-control-nav li').length;
 
 
 
+
 $(window).on('load', function(){
   $('.preloader').delay(500).fadeOut('slow');
 })
@@ -189,7 +234,6 @@ function videoplay(button) {
   var par = button.parentNode;
   par.innerHTML = '<iframe width="290" height="200" src="https://www.youtube.com/embed/FeRO2x-FXzc" frameborder="0" allowfullscreen></iframe>';
 }
-
 
 
 

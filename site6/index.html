@@ -40,7 +40,12 @@
 				</div>
 				<div class="location">
 					<img src="img/icons/Pin_2.svg" alt="pin">
-					<p class="location__text">Сергив Посад</p>
+					<select class="select" >
+						<option class="location__text" value="">Сергив Посад</option>
+						<option class="location__text" value="">Москва</option>
+						<option class="location__text" value="">Москва</option>
+					</select>
+					
 				</div>
 				<div class="phone-numbers">
 					<p>+7 (499) 322-92-26</p>
@@ -147,12 +152,12 @@
 							</div>
 						</div>
 					</div>
-					
+
 
 				</div>
 			</div>
 		</div>
-		
+
 	</header>
 	<section class="box-section work">
 		<div class="container">
@@ -164,18 +169,18 @@
 						и воплощаем дизайнерские решения
 					</p>
 					<ul class="tabs__caption">
-						<li>Двухуровневый</li>
+						<li class="active-color active">Двухуровневый</li>
 						<li>Фотопечать</li>
 						<li>Бесщелевой</li>
 						<li>Парящий</li>
-						<li class="active-color active">Евро-потолки</li>
+						<li>Евро-потолки</li>
 						<li>Скрытый карниз</li>
 					</ul>
 				</div>
 				<!-- 1 tab -->
 				<div class="content__picture tabs__content">
 					<div>
-						<div class="owl-carousel owl-theme owl-loaded box-slider">
+						<div id="#owl-demo1" class="owl-carousel owl-theme owl-loaded">
 							<div class="owl-stage-outer">
 								<div class="owl-stage">
 									<div class="owl-item box-section-slider-owl-item">
@@ -205,7 +210,7 @@
 				<!-- 2 tab -->
 				<div class="content__picture tabs__content">
 					<div>
-						<div class="owl-carousel owl-theme owl-loaded box-slider">
+						<div id="#owl-demo2" class="owl-carousel owl-theme owl-loaded box-slider">
 							<div class="owl-stage-outer">
 								<div class="owl-stage">
 									<div class="owl-item box-section-slider-owl-item">
@@ -214,7 +219,7 @@
 									<div class="owl-item box-section-slider-owl-item">
 										<img src="img/gallery/потолок с фотопечатью в ванной комнате.jpg" alt="img">
 									</div>
-									
+
 								</div>    	        			        
 							</div>
 						</div>
@@ -258,11 +263,11 @@
 									<div class="owl-item box-section-slider-owl-item">
 										<img src="img/gallery/парящий потолок с теплой лентой.jpg" alt="img">
 									</div>
-									
+
 								</div>    	        			        
 							</div>
 						</div>
-						<h3 class="content__picture-text">Порящий</h3>
+						<h3 class="content__picture-text">Парящий</h3>
 						<p class="content__picture-description">Система контурного потолка EuroKraab — это дизайнерское решение для сочетания плоскости потолка со стеной, при котором оставляется правильный, ровный теневой зазор. 
 						</p>
 					</div>	    
@@ -474,11 +479,11 @@
 	<section class="box-section gallery-section">
 		<div class="container">
 			<h2 class="box-section__title">Фото наших работ</h2>
-			
+
 			<div class="owl-carousel owl-theme owl-loaded gallery-slider">
 				<div class="owl-stage-outer">
 					<div class="owl-stage">
-						<div class="owl-item gallery-slider">
+						<div class="owl-item">
 							<img src="img/Слой 712.jpg" alt="img">
 						</div>
 						<div class="owl-item">
@@ -487,17 +492,23 @@
 						<div class="owl-item">
 							<img src="img/Слой 714.jpg" alt="img">
 						</div>
+						<div class="owl-item">
+							<img src="img/Слой 713.jpg" alt="img">
+						</div>
+						<div class="owl-item">
+							<img src="img/Слой 713.jpg" alt="img">
+						</div>
 					</div>    	        			        
 				</div>
-				
+
 			</div>
 			<p class="gallery-text">Мы работае с 2010 года и за это время исполнили свыши 8000 заказов вы 		можете</p>
-			<a class="btn-gallery" href="gallery.html">посмотреть все фото</a>
+			<!-- <a class="btn-gallery" href="gallery.html">посмотреть все фото</a> -->
 
-			
-			
+
+
 			<p class="sale-text">Скидка растет с каждым ответом</p>
-			<button  rel="popup3" class="btn btn-qustion show_popup">Пройти опросник</button>
+			<!-- <button  rel="popup3" class="btn btn-qustion show_popup">Пройти опросник</button> -->
 		</div>
 	</section>
 	<section class="box-section reply-section">
@@ -513,12 +524,12 @@
 				<div class="tabs__content active">
 					<div class="reply-wrapper">
 						<div class="reply-item">
-							
+
 							<div class="iframe-box">
 								<img onclick="videoplay(this);" src="img/icons/play копия.png" alt="watch">
-								
+
 							</div>
-							
+
 							<p class="author-name">Елена Владимировна</p>
 							<p class="author-adress">Сергиев Посад, Кирпичная, 32</p>
 							<p class="reply-text">В пятницу обратились в компанию Фронталь по поводу натяжных потолков, в понедельник  уже смонтировали. Приехали двое парней, цена устроила, работа тоже устроила, всё замечательно чисто и красиво. Мы расстаёмся с хорошим настроением . Спасибо ребята!</p>
@@ -530,7 +541,7 @@
 						<div class="reply-item">
 							<div class="iframe-box">
 								<img onclick="videoplay(this);" src="img/icons/play копия.png" alt="watch">
-								
+
 							</div>
 							<p class="author-name">Эдуард</p>
 							<p class="author-adress">Москва, Новогиреевская улица, 13</p>
@@ -545,7 +556,7 @@
 						<div class="reply-item">
 							<div class="iframe-box">
 								<img onclick="videoplay(this);" src="img/icons/play копия.png" alt="watch">
-								
+
 							</div>
 							<p class="author-name">Елена</p>
 							<p class="author-adress">Москва, Малая Андроньевская 
@@ -627,8 +638,8 @@
 						</div> 
 					</div>
 				</div>
-				
-				
+
+
 			</div>
 			<button class="btn btn-reply">Показать еще отзывы</button>
 		</div>
@@ -636,7 +647,7 @@
 	<section class="box-section material-section">
 		<div class="container">
 			<h2 class="box-section__title">Подберите подходящий материал для отделки потолка</h2>
-			
+
 			<div class="owl-carousel owl-theme owl-loaded material-slider">
 				<div class="owl-stage-outer">
 					<div class="owl-stage">
@@ -778,7 +789,7 @@
 										</div>
 									</div>
 								</div>
-								<button class="btn btn-cost">Рассчитать</button>
+								<button class="btn">Рассчитать</button>
 							</form>
 
 
@@ -1043,8 +1054,10 @@
 										<p class="light-box__title">Светильники Ecola</p>
 										<p class="light-box__description">Длительный срок службы, не греются, с хорошей светоотдачей, замена лампы в полоборота. 
 										Низкое энергопотребление.</p>
-										<img class="light-box__img" src="img/icons/Attention.svg" alt="light">
-										<p class="light-box__text">Установка сверхтонких светильников Экола включает в себя разводку кабеля и все работы связанные с подключением. </p>
+										<div class="row-sizing">
+											<img class="light-box__img" src="img/icons/Attention.svg" alt="light">
+											<p class="light-box__text">Установка сверхтонких светильников Экола включает в себя разводку кабеля и все работы связанные с подключением. </p>
+										</div>
 									</div>
 									<div class="light-container">
 										<div>
@@ -1236,7 +1249,7 @@
 										<p class="pop-text">Оставте заявку, и мы свяжемся с вами в ближайшее время, чтобы назначить встречу. 
 										</p>
 										<input class="btn form-sale__btn-footer" type="tel" placeholder="+7(000)000-00-00">
-										<button class="btn btn-footer show_popup">Оставить заявку</button>
+										<button  rel="popup1"class="btn btn-footer show_popup">Оставить заявку</button>
 									</div>
 								</div>
 								<!-- Modal HTML embedded directly into document -->
@@ -1248,12 +1261,12 @@
 						</div>
 
 					</footer>
-					
-					
+
+
 
 					<script src="libs/jquery/jquery-3.4.1.min.js"></script>
 					<script src="libs/owl-carousel/owl.carousel.min.js"></script>
-					
+
 					<script src="js/main.js"></script>
 				</body>
 				</html>

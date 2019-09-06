@@ -28,6 +28,9 @@ h2,h3{
 	padding:0 10px;
 	overflow: hidden;
 }
+.owl-carousel.off {
+  display: block;
+}
 
 /*=======Buttons=======*/
 button,
@@ -85,90 +88,103 @@ input[type="button"] {
              display: flex;
              align-items: center;
            }
-           .location img{
-             width:20px;
-             margin-right: 8px;
-           }
-           .main-header .location__text{
+           .select{
+            border:none;
+            background: none;
             font-size: 16px;
             font-family: 'Rubik-Regular';
             line-height: 1.2;
-            margin-bottom: 0;
+            outline: 0;
           }
-          .phone-numbers{
-            font-size: 16px;
-            font-family: "Montserrat";
-            
-            line-height: 1.2;
+          .select > option{
+            border:none;
           }
-          .contacts{
-           margin-left: auto;
+
+          .location img{
+           width:20px;
+           margin-right: 8px;
          }
-         .contacts>a{
-           right: 0;
-           margin-right: 20px;
-         }
-         .contacts>a>img{
-           width: 30px;
-         }
-         .main-title{
-          font-size: 58px;
-          font-family: "Montserrat";
-          
-          line-height: 1.2;
-          text-align: center;
-          font-weight: 400;
-          max-width: 580px;  
-          margin: 0 auto;     
-          margin-bottom: 40px;
-        }
-        .header-description{
+         .main-header .location__text{
+          font-size: 16px;
           font-family: 'Rubik-Regular';
-          
           line-height: 1.2;
-          font-size: 24px;	
-          text-align: center;
-          max-width: 340px;
-          margin: 0 auto;  
-          margin-bottom: 80px;
+          margin-bottom: 0;
         }
-        .btn-order{
-          font-size: 20px;
+        .phone-numbers{
+          font-size: 16px;
           font-family: "Montserrat";
-          color: #fff;
-          /*text-decoration: underline;*/
-          background: rgb(231, 47, 42);
-          line-height: 1.1;
-          text-align: center;
-          display: block;
-          width:305px;
-          padding: 20px;
-          border-radius: 30px;
-          margin: 0 auto;
-          margin-bottom: 90px;
-          opacity:0.7;
-          -webkit-transition: all .2s ease-in-out;
-          -moz-transition: all .2s ease-in-out;
-          -o-transition: all .2s ease-in-out;
-          -ms-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
+
+          line-height: 1.2;
         }
-        .btn-order:hover{
-          opacity:1;
-        }
-        .row{
-         display: flex;
-         max-width: 1100px;
-         padding-top: 60px;
+        .contacts{
+         margin-left: auto;
        }
-       .row .red-box{
+       .contacts>a{
+         right: 0;
+         margin-right: 20px;
+       }
+       .contacts>a>img{
+         width: 30px;
+       }
+       .main-title{
+        font-size: 58px;
+        font-family: "Montserrat";
+
+        line-height: 1.2;
+        text-align: center;
+        font-weight: 400;
+        max-width: 580px;  
+        margin: 0 auto;     
+        margin-bottom: 40px;
+      }
+      .header-description{
+        font-family: 'Rubik-Regular';
+
+        line-height: 1.2;
+        font-size: 24px;	
+        text-align: center;
+        max-width: 340px;
+        margin: 0 auto;  
+        margin-bottom: 80px;
+      }
+      .btn-order{
+        font-size: 20px;
+        font-family: "Montserrat";
+        color: #fff;
+        /*text-decoration: underline;*/
+        background: rgb(231, 47, 42);
+        line-height: 1.1;
+        text-align: center;
+        display: block;
+        width:305px;
+        padding: 20px;
+        border-radius: 30px;
+        margin: 0 auto;
+        margin-bottom: 90px;
+        opacity:0.7;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        -o-transition: all .2s ease-in-out;
+        -ms-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+      }
+      .btn-order:hover{
+        opacity:1;
+      }
+      .row{
+        height: 190px;
+        display: flex;
+        max-width: 1100px;
         padding-top: 60px;
+      }
+      .row .red-box{
+        padding-top: 30px;
 
         background: red;
       }
       .row h2{
        font-size: 24px;
-       
+
        padding-left: 50px;
        padding-right: 50px;
      }
@@ -176,6 +192,7 @@ input[type="button"] {
       font-size: 35px;
       font-family: "Montserrat";
       font-weight: 400;
+      padding-top: 15px;
       max-width: 160px;
       color: rgb(255, 255, 255);
       line-height: 1.2;
@@ -185,8 +202,8 @@ input[type="button"] {
       position: relative;
     }
     .slider-counter{
-      padding-top: 50px;
-      padding-left: 50px;
+      text-align: center;
+      padding-top: 20px;
       font-size: 20px;
       color:#fff;
       font-family: "Montserrat";
@@ -194,7 +211,7 @@ input[type="button"] {
     }
     .owl-carousel.box-slider .owl-item img{
      width: 100%;
-     height: 350px;
+     /*height: 350px;*/
      margin-right: 0;
    }
    .owl-item__box{
@@ -518,6 +535,7 @@ input[type="button"] {
              
            }
            .author-adress{
+            height: 30px;
             font-size: 16px;
             font-family: "Rubik-Regular";
             color: rgba(98, 102, 121, 0.502);
@@ -597,8 +615,8 @@ input[type="button"] {
              background: #000;
            }
            .material-section .container{
-            padding-right: 60px;
-            padding-left: 60px;
+            padding-right: 100px;
+            padding-left: 100px;
           }
           .material-section .box-section__title{
            color: #fff;
@@ -618,7 +636,7 @@ input[type="button"] {
           text-transform: uppercase;
           line-height: 1.5;
           width: 240px;
-          margin-bottom: 35px;	
+          margin-bottom: 15px;	
         }
 
         .material-title{
@@ -763,9 +781,9 @@ input[type="button"] {
 
          }
          .country{
-           margin-bottom: 45px;
-         }
-         .form-item__title{
+          margin-bottom: 50px;
+        }
+        .form-item__title{
           font-size: 20px;
           font-family: "Rubik-Regular";
           color: #000;
@@ -811,6 +829,7 @@ input[type="button"] {
             .example-section{
              padding-bottom: 160px;
            }
+
            .example-section .box-section__title{
              max-width: 720px;
              text-align: center;
@@ -873,6 +892,7 @@ input[type="button"] {
          }
          .example-section .column img{
            width:100%;
+           margin-top: -10px;
          }
 
 /*==========================================================
@@ -911,21 +931,22 @@ input[type="button"] {
             margin-bottom: 30px;
           }
           .info-section .content__title{
-           max-width: 300px;
-           margin-bottom: 25px;
-         }
+            max-width: 500px;
+            font-size: 24px;
+            margin-bottom: 25px;
+          }
 
-         .column-text{
-          font-size: 16px;
-          font-family: "Rubik-Regular";
-          color: rgb(98, 102, 121);
-          line-height: 1.5;
-          min-width:300px;
-        }
-        .column-img{
-         width:60px;
-         margin-bottom: 20px;
-       }
+          .column-text{
+            font-size: 16px;
+            font-family: "Rubik-Regular";
+            color: rgb(98, 102, 121);
+            line-height: 1.5;
+            min-width:300px;
+          }
+          .column-img{
+           width:60px;
+           margin-bottom: 20px;
+         }
 
 /*==========================================================
 						VIDEO SECTION
@@ -936,95 +957,105 @@ input[type="button"] {
 
            }
            .video-section .tabs-row li{
-             margin-right: 15px;
-           }
-           .video-section .tabs-row li:last-child{
-             margin-right: 0;
-           }
-           .video-box{
-             display: flex;
-             align-items: center;
-           }
-           .video-link{
-            font-size: 18px;
-            font-family: "Montserrat";
-            color: rgb(231, 49, 42);
-            line-height: 1.2;
-
+            margin-right: 90px;
           }
-          .video-link:hover{
-           border-bottom: 1px solid rgb(231, 49, 42);
+          .video-section .tabs-row li:last-child{
+           margin-right: 0;
          }
+         .video-box{
+           display: flex;
+           align-items: center;
+         }
+         .video-link{
+          font-size: 18px;
+          font-family: "Montserrat";
+          color: rgb(231, 49, 42);
+          line-height: 1.2;
+
+        }
+        .video-link:hover{
+         border-bottom: 1px solid rgb(231, 49, 42);
+       }
 /*==========================================================
 						SIZING SECTION
             ===========================================================*/
             .sizing-section{
              background: #000;
            }
-           .sizing-section .box-section__title{
-             margin-bottom: 30px;
-           }
-           .sizing-section .info-section-text{
-             margin-bottom: 80px;
-           }
-           .sizing-section .info-section-text,
-           .sizing-section .box-section__title,
-           .sizing-section .content__description{
-             color: #fff;
-             text-align: center;
-           }
-
-           .red-circle{
-             display: flex;
-             align-items: center;
-             justify-content: center;
-             width:40px;
-             height: 40px;
-             border-radius: 50%;
-             background: rgb(231, 49, 42);
-             margin: 0 auto;
-             margin-bottom: 30px;
-           }
-           .red-circle span{
-            font-size: 18px;
-            font-family: "Montserrat";
-            color: rgb(255, 255, 255);
-            font-weight: bold;
-            line-height: 1.2;
-            text-align: center;
+           .sizing-section .btn-master-order{
+            margin-top: 0;
           }
 
-          .sizing-section .wrapper{
-           display: grid;
-           grid-template-columns: 1fr 1fr 1fr;
+          .sizing-section .box-section__title{
+           margin-bottom: 30px;
+           font-size: 50px;
+           color: #fff;
+           max-width: 700px;
          }
+         .sizing-section .info-section-text{
+           margin-bottom: 80px;
+         }
+         .sizing-section .info-section-text{
+          font-size: 28px;
+        }
 
-         .sizing-section p{
-          font-size: 18px;
-          font-family: "Montserrat";
-          color: rgb(255, 255, 255);
-          line-height: 1.2;
-          text-align: center;
-          margin-bottom: 30px;
+        .sizing-section .content__description{
+         color: #fff;
+         text-align: center;
+         font-size: 16px;
+       }
 
-        }
-        .work-time{
-          font-size: 18px;
-          font-family: "Montserrat";
-          color: rgba(255, 255, 255, 0.4);
-          line-height: 2;
-          text-align: center;
-          opacity:0.4;
-          margin-bottom: 45px;
-        }
-        .text-number{
-          font-size: 24px;
-          font-family: "Montserrat";
-          color: rgb(255, 255, 255);
-          line-height: 1.2;
-          text-align: center;
-          margin-bottom: 15px;
-        }
+       .red-circle{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         width:40px;
+         height: 40px;
+         border-radius: 50%;
+         background: rgb(231, 49, 42);
+         margin: 0 auto;
+         margin-bottom: 30px;
+       }
+       .red-circle span{
+        font-size: 18px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        line-height: 1.2;
+        text-align: center;
+      }
+
+      .sizing-section .wrapper{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+     }
+
+     .sizing-section p{
+      font-size: 22px;
+      font-family: "Montserrat";
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 30px;
+
+    }
+    .work-time{
+      font-size: 18px;
+      font-family: "Montserrat";
+      color: rgba(255, 255, 255, 0.4);
+      line-height: 2;
+      text-align: center;
+      opacity:0.4;
+      margin-bottom: 45px;
+    }
+    .text-number{
+      font-size: 24px;
+      font-family: "Montserrat";
+      color: rgb(255, 255, 255);
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 15px;
+    }
 
 /*==========================================================
 						COMFORT SECTION
@@ -1054,7 +1085,7 @@ input[type="button"] {
           }
           .light-box__description{
 
-            font-size: 24px;
+            font-size: 16px;
             font-family: "Rubik-Regular";
             color: rgb(5, 17, 51);
             line-height: 1.5;
@@ -1394,11 +1425,16 @@ input[type="button"] {
      .hide{
        display: none;
      }
+     .row-sizing{
+      display: flex;
+      align-items: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
 
+    /* Окно */
 
-     /* Окно */
-
-     .overlay_popup {
+    .overlay_popup {
       display:none;
       position:fixed;
       z-index: 999;
@@ -1426,15 +1462,17 @@ input[type="button"] {
      font-family: 'Rubik-Light';
      transform: rotate(135deg);
      font-size: 50px;
-     top:-15%;
+     top:-10%;
      right: 0;
      
      cursor: pointer;
    }
 
    /* Ещё немного стилей для popup окна */
-
-   .object{
+   #popup1{
+    z-index: 99999;
+  }
+  .object{
     max-width: 500px;
     max-height: 800px;
     margin: 0 auto;	
@@ -1524,6 +1562,7 @@ input[type="button"] {
 /*============================================================================
 ===============================MEDIA QURIES START=======================*/
 @media only screen and (min-device-width : 320px) and (max-device-width : 767px) {
+
 	.owl-carousel.material-slider .owl-nav button.owl-prev{
     position: absolute;
     cursor: pointer;
@@ -1552,13 +1591,37 @@ input[type="button"] {
   padding-right: 50px;
   padding-left: 50px;
 }
-
+.row{
+  height: 130px;
+  display: flex;
+  max-width: 1100px;
+  padding-top: 60px;
+}
 .row .red-box{
   padding-top: 25px;
 
   background: red;
   }.slider-counter{
-    padding-top: 39px;
+    text-align: center;
+    padding-top: 4px;
+  }
+  body > header > div > div.top-slider.owl-drag > div.owl-nav > button.owl-prev{
+    position: absolute;
+    bottom: -6.5%;
+    left: -10px;
+    cursor: pointer;
+    background: none;
+    color:#fff;
+    font-size: 45px;
+  }
+  body > header > div > div.top-slider.owl-drag > div.owl-nav > button.owl-next{
+    position: absolute;
+    bottom: -6.5%;
+    left: 75px;
+    cursor: pointer;
+    background: none;
+    color:#fff;
+    font-size: 45px;
   }
 
   .row h2{
@@ -2144,6 +2207,9 @@ input[type="button"] {
 
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 959px) {
+  .video-section .tabs-row li{
+    margin-right: 40px;
+  }
   .owl-carousel.material-slider .owl-nav button.owl-prev{
     position: absolute;
     cursor: pointer;
@@ -2193,9 +2259,10 @@ input[type="button"] {
   
 }
 .row{
-	display: flex;
-	padding-top: 0;
-	max-width: 1100px;
+  height: 130px;
+  display: flex;
+  max-width: 1100px;
+  padding-top: 60px;
 }
 .row h2{
 	font-size: 18px;
@@ -2471,10 +2538,12 @@ input[type="button"] {
        background: #fff;
      }
 
-   }
+     .material-section .container{
+      padding-right: 60px;padding-left: 60px;
+    }
 
- }
- @media only screen and (min-device-width : 768px) and (max-device-width : 995px) {
+  }
+  @media only screen and (min-device-width : 768px) and (max-device-width : 995px) {
    .reply-wrapper{
     grid-template-columns: 1fr 1fr;
   }
@@ -2558,16 +2627,19 @@ input[type="button"] {
           -webkit-transform: scale(1);
           transform: scale(1);
         }
-
-
-
-
-
-
-
-
-
-
+        @media screen and (max-width: 767px) {
+          .owl-item.cloned{
+            display: none !important;
+          }
+          .owl-stage{
+            transform:none !important;
+            transition: none !important;
+            width: auto !important;
+          }
+          .owl-item{
+            width: auto !important;
+          }
+        }
 
 
 
