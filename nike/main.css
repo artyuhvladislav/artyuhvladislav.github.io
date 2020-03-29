@@ -1,0 +1,786 @@
+/*============================
+			ADD FONTS
+==============================*/
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('fonts/roboto/Roboto-Light.eot');
+	src: local('fonts/roboto/Roboto-Light'),
+	url('fonts/roboto/Roboto-Light.woff2') format('woff2'),
+	url('fonts/roboto/Roboto-Light.woff') format('woff'),
+	url('fonts/roboto/Roboto-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('fonts/roboto/Roboto-Regular.eot');
+	src: url('fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+	url('fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+	url('fonts/roboto/Roboto-Regular.woff') format('woff'),
+	url('fonts/roboto/Roboto-Regular.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DIN Next LT Pro';
+	src: url('fonts/dinpro/DINNextLTPro-MediumCond.eot');
+	src: local('fonts/dinpro/DIN Next LT Pro Medium Condensed'), local('DINNextLTPro-MediumCond'),
+	url('fonts/dinpro/DINNextLTPro-MediumCond.eot?#iefix') format('embedded-opentype'),
+	url('fonts/dinpro/DINNextLTPro-MediumCond.woff2') format('woff2'),
+	url('fonts/dinpro/DINNextLTPro-MediumCond.woff') format('woff'),
+	url('fonts/dinpro/DINNextLTPro-MediumCond.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+
+
+
+/*============================
+		MAIN SETTINGS
+==============================*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: #333;
+	font-family: 'Roboto-Regular';
+	line-height: 1.5;
+}
+a {
+	text-decoration: none;
+}
+button, select {
+	outline: none;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+ul {
+	list-style: none;
+}
+h2,h3,h4 {
+	font-family: 'DIN Next LT Pro';
+}
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px 0 10px;
+}
+.row {
+	display: grid;
+}
+
+
+
+
+
+
+
+/*============================
+		MAIN HEADER
+==============================*/
+.main-header {
+	padding: 30px 0 0;
+	font-family: 'DIN Next LT Pro';
+}
+.row-navigation {
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr 5fr 4fr;
+	align-items: center;
+}
+.main-navigation > ul {
+	display: flex;
+}
+.main-navigation__item {
+	margin-left: 25px;
+}
+.main-navigation__link {
+	padding: 15px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #333;
+	transition: 0.1s linear;
+}
+.main-navigation__link:hover {
+	color: #0089cf;
+	border-bottom: 4px solid #0089cf;
+}
+.main-navigation__link_active {
+	color: #0089cf;
+	cursor: normal;
+	border-bottom: 4px solid #0089cf;
+}
+.user-panel {
+	display: flex;
+	justify-content: flex-end;
+}
+.user-panel__item {
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+	padding: 15px 0;
+	transition: 0.1s linear;
+}
+.user-panel__item:last-child {
+	margin-right: 0;
+}
+.user-panel__item:hover {
+	color: #0089cf;
+}
+.user-panel__name {
+	display: block;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*============================
+			MAIN-ARTICLE
+==============================*/
+
+.main-product{
+	background: #fff;
+	padding: 60px 0;
+	font-family: 'DIN Next LT Pro';
+}
+.main-product .container {
+	padding: 0 50px;
+}
+.main-product .row {
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-column-gap: 60px;
+}
+.product-main-img {
+	width: 100%;
+	justify-self: center;
+	align-self: end;
+}
+.product-like {
+	width: 50px;
+	height: 50px;
+	margin-bottom: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #e4e4e4;
+	cursor: pointer;
+}
+.product-title {
+	font-size: 35px;
+	line-height: 1.3;
+}
+.product-title > span {
+	font-size: 25px;
+	display: block;
+}
+.product-cost {
+	font-size: 18px;
+	color: #666;
+	margin-bottom: 20px;
+}
+.product-color {
+	color: #666;
+	line-height: 1.5;
+	margin-bottom: 15px;
+}
+.product-color > span {
+	color: #0089cf;
+}
+.row-product-img {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 100px);
+	margin-bottom: 20px;
+}
+.product-size {
+	font-family: 'Roboto-Light';
+	font-size: 12px;
+	color: #666;
+	margin-bottom: 15px;
+}
+.product-btn {
+	display: flex;
+}
+.product-select,
+.product-card {
+	width: 125px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.product-select {
+	margin-right: 15px;
+	padding-left: 20px;
+	font-family: 'DIN Next LT Pro';
+	color: #666;
+	border: 1px solid #e4e4e4;
+}
+.product-select__item {
+	color: #666;
+	border: 1px solid  #e4e4e4;
+}
+.product-card {
+	background: #333;
+	color: #fff;
+}
+
+
+
+
+
+
+/*============================
+	 DESCRIPTION SECTION
+==============================*/
+.description {
+	position: relative;
+	background: url(img/about-bg.jpg) no-repeat center/cover #666;
+	color: #fff;
+	padding: 250px 0;
+	z-index: -1;
+}
+.description::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: #000;
+	opacity: .6;
+}
+.description-box {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.description-title {
+	font-family: 'DIN Next LT Pro';
+	font-size: 25px;
+	font-weight: 400;
+}
+.description-text {
+	font-family: 'Roboto-Light';
+	max-width: 395px;
+}
+
+
+
+
+
+
+
+/*============================
+	 ABOUT SECTION
+==============================*/
+.about {
+	padding: 50px 0;
+	background: #f6f6f6;
+}
+.about .row {
+	grid-template-columns: 1fr 2fr 1fr;
+	align-items: center;
+}
+.about-img {
+	width: 100%;
+}
+.about .about-title > span {
+	font-family: 'DIN Next LT Pro';
+	color: #666;
+}
+.about-description {
+	margin-top: 10px;
+	margin-bottom: 40px;
+	font-family: 'Roboto-Light';
+	color: #666;
+	font-size: 14px;
+}
+.benefits-item {
+	margin-bottom: 10px;
+}
+.benefits-title {
+	margin-bottom: 15px;
+	color: #666;
+}
+.benefits-item__title {
+	font-size: 18px;
+}
+.benefits-item__text {
+	font-family: 'Roboto-Light';
+	color: #666;
+	font-size: 14px;
+}
+.about-article {
+	max-width: 320px;
+	padding: 20px;
+	border:4px solid #e4e4e4;
+	background: #fff;
+}
+.article-title {
+	font-family: 'DIN Next LT Pro';
+	font-size: 25px;
+}
+.article-description {
+	font-family: 'Roboto-Light';
+	color: #666;
+	margin-bottom: 10px;
+}
+.article-color {
+	color: #0089cf;
+	font-family: 'DIN Next LT Pro';
+	margin-bottom: 35px;
+}
+.article-img {
+	margin-bottom: 35px;
+}
+.about-article span {
+	font-family: 'DIN Next LT Pro';
+}
+.article-cost {
+	font-family: 'DIN Next LT Pro';
+	font-size: 18px;
+	padding-left: 60%;
+}
+
+
+/*============================
+	 GALLERY SECTION
+==============================*/
+.gallery {
+	padding: 100px 0;
+}
+.section-title {
+	font-size: 25px;
+}
+.section-title > span {
+	display: block;
+	color: #666;
+	font-size: 14px;
+	font-family: 'Roboto-Light';
+}
+.gallery .row {
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	grid-gap: 10px;
+}
+.gallery-img {
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+/*============================
+			FOOTER
+==============================*/
+.footer {
+	padding: 45px 0;
+	color: #666;
+	background: #0c0d0d;
+	font-family: 'DIN Next LT Pro';
+}
+.footer  .row {
+	grid-template-columns: 1fr 5fr 1fr;
+}
+
+.footer-navigation {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	font-size: 14px;
+}
+.footer-navigation__link {
+	line-height: 1.75;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #666;
+}
+.social {
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-template-rows:1fr 1fr; 
+	/*justify-items: center;*/
+}
+.social-item  {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 10px;		
+	width: 50px;
+	height: 50px;
+	border: 1px solid #666;
+}
+.social-item:first-child {
+	margin-left: 0;
+}
+.social-suscribe{
+	grid-column: 1/6;
+	justify-content: flex-start;
+	margin-left: 0;
+	text-align: left;
+	width: auto;
+	height: 35px;
+	border: none;
+	border-bottom: 1px solid #666;
+	text-decoration: none;
+	color: #666;
+	font-family: 'Roboto-Regular';
+}
+.social-suscribe img {
+	margin-right: 15px;
+}
+
+
+
+
+/*====================================================================
+	
+	 					BRAND HTML DOC
+
+=====================================================================*/
+.brand {
+	background: url('img/bg pattern.jpg') no-repeat center/cover;
+	font-family: 'DIN Next LT Pro';
+}
+
+.products-text {
+	color: #0089cf;
+	display: block;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.row-product {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	justify-content: center;
+}
+.brand-logo {
+	padding-top: 35px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+.product-item {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*============================
+		MOBILE-MENU STYLES
+==============================*/
+.mobile-menu, 
+.mobile-menu__burger {
+	display: none;
+	opacity: 1;
+}
+.mobile-menu__block {
+	display: none;
+}
+.mobile-menu__burger {
+	display: none;
+	justify-content: space-between;
+	height: 30px;
+	padding-left: 10px;
+	cursor: pointer;
+}
+.mobile-menu__burger > span{
+	display: block;
+	width: 40px;
+	height: 3px;
+	border-radius: 3px;
+	background: #0089cf;
+}
+
+
+
+
+
+
+/*============================
+		MEDIA QUERIES
+==============================*/
+@media only screen and (max-width: 992px){
+	/*============================
+			MAIN HEADER
+	==============================*/
+	.user-panel {
+		display: flex;
+		justify-content: flex-end;
+	}
+	/*============================
+			MOBILE MENU 
+	==============================*/
+			.main-navigation {
+				display: block;
+			}
+			
+
+	/*============================
+			MAIN-ARTICLE
+	==============================*/
+	.main-product .row {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		justify-content: center;
+	}
+	
+	/*============================
+			 ABOUT SECTION
+	==============================*/
+	.about .row {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
+		align-items: center;
+		justify-content: center;
+	}
+	.about-img {
+		width: 100%;
+	}
+
+	/*============================
+				FOOTER
+	==============================*/
+	.footer  .row {
+		grid-template-columns: 1fr 5fr 1fr;
+	}
+
+	.footer-navigation {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.social-item  {		
+		width: 50px;
+		height: 50px;
+	}
+
+
+
+
+	/*====================================================================
+	
+	 					BRAND HTML DOC
+
+	=====================================================================*/
+
+	.row-product {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		align-items: center;
+		justify-content: center;
+	}
+	.product-item__img {
+		width: 90%;
+	}
+
+
+}
+
+
+
+
+@media only screen and (max-width: 767px){
+/*============================
+			MAIN HEADER
+==============================*/
+	.row-navigation {
+			grid-template-columns: 1fr 1fr 4fr;
+	}
+	.user-panel {
+		display: flex;
+		justify-content: flex-start;
+	}
+	/*============================
+			MOBILE MENU 
+	==============================*/
+			.main-navigation {
+				display: none;
+			}
+			/*============================
+					NO MOBILE RULES 
+			==============================*/
+					.mobile-menu, 
+					.mobile-menu__burger {
+						display: grid;
+						opacity: 1;
+					}
+
+	/*============================
+			MAIN-ARTICLE
+	==============================*/
+	.main-product .row {
+		grid-template-columns: 1fr;
+		grid-row-gap: 15px;
+	}
+	.product-main-img {
+		width: 75%;
+		align-self: end;
+	}
+	.product-like {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 25px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 479px){
+
+	/*============================
+			MAIN HEADER
+	==============================*/
+		/*.row-navigation {
+			grid-template-columns: 1fr 1fr 7fr;
+		}
+		.user-panel__item {
+			margin-right: 40px;
+		}*/
+	/*============================
+				FOOTER
+	==============================*/
+	/*.footer  .row {
+		grid-template-columns: 1fr 3fr 1fr;
+	}
+
+	.footer-navigation {
+		grid-template-columns: repeat(2, 1fr);
+	}*/
+
+
+
+
+
+	/*============================
+			MAIN HEADER
+	==============================*/
+		.row-navigation {
+			grid-template-columns: 1fr 1fr 4fr;
+		}
+		.logo-img {
+			width:40px;
+		}
+		.user-panel {
+			justify-content: flex-start;
+		}
+		.user-panel__item {
+			margin-right: 15px;
+		}
+		.user-panel__name {
+			margin-left: 5px;
+		}
+
+		/*============================
+				MOBILE MENU 
+		==============================*/
+		.mobile-menu {
+			display: grid;
+			/*grid-area: mobile-menu;*/
+		} 
+		.mobile-menu__burger {
+			display: grid;
+			align-items: center;
+			height: 25px;
+			opacity: 1;
+		}
+
+		.mobile-menu__burger > span {
+			width: 30px;
+		}
+		.main-navigation {
+			display: none;
+		}
+
+	/*============================
+			MAIN-ARTICLE
+	==============================*/
+	.main-product .row {
+		grid-template-columns: 1fr;
+		grid-row-gap: 15px;
+	}
+	.product-main-img {
+		width: 100%;
+		align-self: end;
+	}
+	.product-like {
+	width: 30px;
+	height: 30px;
+	margin-bottom: 25px;
+	}
+	.product-title {
+		font-size: 25px;
+		line-height: 1.3;
+	}
+	.product-title > span {
+		font-size: 18px;
+		display: block;
+	}
+	.product-cost {
+		font-size: 16px;
+		color: #666;
+		margin-bottom: 20px;
+	}
+
+	/*============================
+				FOOTER
+	==============================*/
+	.footer  .row {
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+
+	.footer-navigation {
+		grid-template-columns: repeat 1fr;
+	}
+	.social-item  {
+		width: 40px;
+		height: 40px;
+	}
+	.social-suscribe {
+		margin-top: 20px;
+		height: 35px;
+	}
+}
+
+
+
+
+@media only screen and (max-width: 320px) {
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
