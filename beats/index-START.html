@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <div class="keys">
+    <div data-key="97" class="key">
+      <kbd>A</kbd>
+      <span class="sound">clap</span>
+    </div>
+    <div data-key="115" class="key">
+      <kbd>S</kbd>
+      <span class="sound">hihat</span>
+    </div>
+    <div data-key="100" class="key">
+      <kbd>D</kbd>
+      <span class="sound">kick</span>
+    </div>
+    <div data-key="102" class="key">
+      <kbd>F</kbd>
+      <span class="sound">openhat</span>
+    </div>
+    <div data-key="103" class="key">
+      <kbd>G</kbd>
+      <span class="sound">boom</span>
+    </div>
+    <div data-key="104" class="key">
+      <kbd>H</kbd>
+      <span class="sound">ride</span>
+    </div>
+    <div data-key="106" class="key">
+      <kbd>J</kbd>
+      <span class="sound">snare</span>
+    </div>
+    <div data-key="107" class="key">
+      <kbd>K</kbd>
+      <span class="sound">tom</span>
+    </div>
+    <div data-key="108" class="key">
+      <kbd>L</kbd>
+      <span class="sound">tink</span>
+    </div>
+  </div>
+
+  <audio data-key="97" src="sounds/clap.wav"></audio>
+  <audio data-key="115" src="sounds/hihat.wav"></audio>
+  <audio data-key="100" src="sounds/kick.wav"></audio>
+  <audio data-key="102" src="sounds/openhat.wav"></audio>
+  <audio data-key="103" src="sounds/boom.wav"></audio>
+  <audio data-key="104" src="sounds/ride.wav"></audio>
+  <audio data-key="106" src="sounds/snare.wav"></audio>
+  <audio data-key="107" src="sounds/tom.wav"></audio>
+  <audio data-key="108" src="sounds/tink.wav"></audio>
+
+  <script>
+    // Promise 
+    const promise = () => {
+      return new Promise((resolve, reject) => {
+        setTimeout(() => { resolve() }, 100)
+      })
+    }
+
+    // Audio playing function
+    const playAudio = (audio) => {
+      if (audio) {
+        audio.pause()
+        audio.currentTime = 0
+        audio.play()
+      }
+    }
+
+    // Handle keypress event
+    window.addEventListener('keypress', e => {
+      // Select pressed key
+      const key = document.querySelectorAll(`[data-key="${e.keyCode}"]`)
+      
+      // Add playing class
+      key[0].classList.add('playing')
+
+      // Play audio
+      playAudio(key[1])
+      // Remove  playing class
+      promise().then(() => {
+        key[0].classList.remove('playing')
+      },
+        () => {
+          alert('Wrong key pressed')
+        })
+    })
+  </script>
+
+
+</body>
+
+</html>
