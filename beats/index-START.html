@@ -12,39 +12,39 @@
 
   <div class="keys">
     <div data-key="97" class="key">
-      <kbd>A</kbd>
+      <span>A</span>
       <span class="sound">clap</span>
     </div>
     <div data-key="115" class="key">
-      <kbd>S</kbd>
+      <span>S</span>
       <span class="sound">hihat</span>
     </div>
     <div data-key="100" class="key">
-      <kbd>D</kbd>
+      <span>D</span>
       <span class="sound">kick</span>
     </div>
     <div data-key="102" class="key">
-      <kbd>F</kbd>
+      <span>F</span>
       <span class="sound">openhat</span>
     </div>
     <div data-key="103" class="key">
-      <kbd>G</kbd>
+      <span>G</span>
       <span class="sound">boom</span>
     </div>
     <div data-key="104" class="key">
-      <kbd>H</kbd>
+      <span>H</span>
       <span class="sound">ride</span>
     </div>
     <div data-key="106" class="key">
-      <kbd>J</kbd>
+      <span>J</span>
       <span class="sound">snare</span>
     </div>
     <div data-key="107" class="key">
-      <kbd>K</kbd>
+      <span>K</span>
       <span class="sound">tom</span>
     </div>
     <div data-key="108" class="key">
-      <kbd>L</kbd>
+      <span>L</span>
       <span class="sound">tink</span>
     </div>
   </div>
@@ -60,12 +60,7 @@
   <audio data-key="108" src="sounds/tink.wav"></audio>
 
   <script>
-    // Promise 
-    const promise = () => {
-      return new Promise((resolve, reject) => {
-        setTimeout(() => { resolve() }, 100)
-      })
-    }
+    const ANIMATION_TIME = 100;
 
     // Audio playing function
     const playAudio = (audio) => {
@@ -75,25 +70,38 @@
         audio.play()
       }
     }
+    ['keypress', 'click'].forEach(eventType => {
+      window.addEventListener(eventType, e => {
 
-    // Handle keypress event
-    window.addEventListener('keypress', e => {
-      // Select pressed key
-      const key = document.querySelectorAll(`[data-key="${e.keyCode}"]`)
-      
-      // Add playing class
-      key[0].classList.add('playing')
+        // get keyCode on click function
+        function getCodeOnClick() {
+          const $div = e.target.closest('.key')
+          if ($div != null) {
+            return $div.getAttribute('data-key')
+          }
+        }
 
-      // Play audio
-      playAudio(key[1])
-      // Remove  playing class
-      promise().then(() => {
-        key[0].classList.remove('playing')
-      },
-        () => {
-          alert('Wrong key pressed')
-        })
+        // Select pressed or clicked key
+        const keyCode = e.keyCode || getCodeOnClick()
+        const key = document.querySelectorAll(`[data-key="${keyCode}"]`)
+
+
+        if (keyCode) {
+          // Add playing class
+          key[0].classList.add('playing')
+
+          // Play audio
+          playAudio(key[1])
+          // Remove  playing class
+          setTimeout(() => {
+            key[0].classList.remove('playing')
+          }, ANIMATION_TIME)
+        }
+
+      })
     })
+    // Handle keypress event
+
   </script>
 
 
