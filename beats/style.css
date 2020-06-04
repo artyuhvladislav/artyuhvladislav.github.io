@@ -19,6 +19,7 @@ body,html {
 }
 
 .key {
+  box-sizing: border-box;
   border: .4rem solid black;
   border-radius: .5rem;
   margin: 1rem;
@@ -48,4 +49,60 @@ span {
   text-transform: uppercase;
   letter-spacing: .1rem;
   color: #ffc600;
+}
+@media (max-width: 979px){
+  .keys {
+    width: 95%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .key {
+    font-size: 1.2rem;
+    padding: 1rem .5rem;
+    width: 8rem;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+
+  .sound {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 767px){
+  .keys {
+    width: 80%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .key {
+    font-size: 1.2rem;
+    padding: 2.7rem .5rem;
+    width: 10rem;
+  }
+
+  span {
+    display: none;
+  }
+
+  .sound {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767px){
+  .keys {
+    width: 100%;
+  }
+
+  .key {
+    font-size: 1.2rem;
+    padding: 2.7rem .5rem;
+    width: 10rem;
+  }
 }
