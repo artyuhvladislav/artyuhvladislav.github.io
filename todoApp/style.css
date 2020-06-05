@@ -1,0 +1,101 @@
+.container {
+    width: 760px;
+    margin: 0 auto;
+}
+input {
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 1px solid rgba(1,1,1, 0.2);
+    border-radius: 5px;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.btn {
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    min-width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.task-wrapper,
+.control-wrapper {
+    display: flex; 
+    margin-bottom: 20px;
+    width: 100%;  
+}
+.task-wrapper {
+    justify-content: space-between;
+}
+.control-wrapper {
+    justify-content: space-between;
+}
+.control-wrapper > .btn {
+    min-width: 250px;
+}
+.task-btn {
+    min-width: 100px;
+    background: none;
+    border: 1px solid rgba(1,1,1, 0.2); 
+}
+.task-btn:hover {
+    border: 1px solid blue;
+    color: blue;
+}
+.task-input {
+    width: 86%;
+}
+
+.done-btn {
+    background: green;
+    color: #fff;
+}
+.restore-btn {
+    background: blue;
+    color: #fff;
+}
+.removed-btn {
+    background: red;
+    color: #fff;
+}
+.control-list__item {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid rgba(1,1,1, 0.2);
+    border-radius: 5px;
+}
+
+.control-remove-btn {
+    min-width: 100px;
+    background: red;
+    color: #fff;
+    border: 1px solid red;
+}
+.control-remove-btn:hover {
+    background: none;
+    border: 1px solid red;
+    color: #000;
+}
+.control-add-btn {
+    min-width: 100px;
+    background: green;
+    border: 1px solid green;
+    color: #fff;
+}
+.control-add-btn:hover {
+    background: none;
+    border: 1px solid green;
+    color: #000;
+}
+.todo-done {
+    text-decoration: line-through;
+    color: rgba(1,1,1, 0.5);
+    font-style: italic;
+
+}
