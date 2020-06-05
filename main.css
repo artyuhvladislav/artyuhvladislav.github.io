@@ -113,16 +113,29 @@ p span{
 	color:#d7d7d7;
 }
 /*-------------- card section ---------------*/
-.portfolio-container .card .face{
+
+.portfolio-container .content {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+.portfolio-container .card {
+	position: relative;
     width:300px;
     height: 200px;
     transition: 0.5s;
-    cursor: pointer;
+	cursor: pointer;
+	display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8)
 }
 
 .portfolio-container .card .face.face1{
     position: relative;
-    background: #191919;
+    background: #1919192c;
     display: flex;
     justify-content: center;
     align-items: center;
