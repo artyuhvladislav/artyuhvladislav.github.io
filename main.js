@@ -1,9 +1,9 @@
 
-let hiddenElement = document.getElementById("links");
-let btn = document.querySelector('.button-contact');
+// let hiddenElement = document.getElementById("links");
+// let btn = document.querySelector('.button-contact');
 
-function handleButtonClick() {
-   hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
-}
+// function handleButtonClick() {
+//    hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
+// }
 
-btn.addEventListener('click', handleButtonClick);
+// btn.addEventListener('click', handleButtonClick);
