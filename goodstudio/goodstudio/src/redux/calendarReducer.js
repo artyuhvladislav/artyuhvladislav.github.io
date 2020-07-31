@@ -6,15 +6,12 @@ const  getDateObj = () => {
     const month = ( d.getMonth()+1 < 10 ) ? '0'+ ( d.getMonth() + 1 ) : d.getMonth() + 1;
     const day = ( d.getDate() < 10 ) ? '0'+ ( d.getDate() ) : d.getDate();
 
-    return {
-        date: [
-            { year: `${year}`},
-            { month: `${month}`},
-            {day: `${day}`}
-        ]
-    }
+    const date = [{ year: `${year}`}, { month: `${month}`}, {day: `${day}`}];
+    return date
+    
 }
-const initialState = getDateObj();
+const initialState = { date:getDateObj() };
+
 
 const calendarReducer = (state = initialState, action) => {
     switch(action.type) {
@@ -27,7 +24,8 @@ const calendarReducer = (state = initialState, action) => {
                     {year: date[0]},
                     {month: date[1]},
                     {day: date[2]}
-                ]
+                ],
+                dateIsChanged: true
             }
         default: 
             return state
