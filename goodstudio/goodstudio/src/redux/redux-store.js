@@ -5,7 +5,6 @@ import galleryReducer from './galleryReducer';
 const reducers = combineReducers({
     calendarPage: calendarReducer,
     picturePage: pictureReducer,
-    // galleryPage: galleryReducer
 })
 
 const saveState = (state) => {
