@@ -1,19 +1,22 @@
 const SET_PICTURE = 'SET_PICTURE';
 
+const localImgFn = () => {
+    const localImg = window.localStorage.getItem('app_img');
+    return (localImg === undefined) ? '' : window.localStorage.getItem('app_img')
+}
 const initialState = {
-       url: '',
-       imgArray:[]
+       urlImg: localImgFn()
 };
 
 const pictureReducer = (state = initialState, action) => {
     switch(action.type) {
         case SET_PICTURE:
+            window.localStorage.setItem('app_img', action.url);
             return {
                 ...state,
-                url: action.url,
-                imgArray : [...state.imgArray, action.url]
+                urlImg: action.url
             }
-       
+
         default:
             return state
     }

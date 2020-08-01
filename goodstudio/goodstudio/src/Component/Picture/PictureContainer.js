@@ -1,11 +1,10 @@
 import { connect } from "react-redux";
-import { setPicture } from '../../redux/pictureReducer';
+import { setPicture} from '../../redux/pictureReducer';
 import PictureAPIComponent from './PictureAPIComponent';
 const mapStateToProps = (state) => {
     return {
-        url: state.picturePage.url,
-        date: state.calendarPage.date,
-        // dateIsChanged: state.calendarPage.dateIsChanged
+        urlImg: state.picturePage.urlImg,
+        url: state.calendarPage.url
     }
 }
 const PictureContainer = connect(mapStateToProps, {setPicture})(PictureAPIComponent);
