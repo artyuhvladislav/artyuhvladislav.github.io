@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,UAAU,CAAC;EACV,MAAM,EAAE,YAAY;EACpB,IAAI,EAAE,wBAAwB,CAAC,UAAU;EACzC,SAAS,EAAE,UAAU,CAAC,UAAU;EAChC,WAAW,EAAE,iBAAiB;EAC9B,KAAK,EAAE,cAAc;EACrB,SAAS,EAAE,cAAc;EACzB,MAAM,EAAE,cAAc;EACtB,UAAU,EAAE,cAAc;EAC1B,OAAO,EAAE,YAAY;EACrB,QAAQ,EAAE,iBAAiB;EAC3B,QAAQ,EAAE,mBAAmB;CAC7B",
+    "sources": [
+        "mmenu.screenreader.scss",
+        "../../_mixins.scss",
+        "../../_includes.scss",
+        "../../_variables.scss"
+    ],
+    "names": [],
+    "file": "mmenu.screenreader.css"
+}

@@ -1,0 +1,6 @@
+.mm-wrapper_dragging .mm-menu,
+.mm-wrapper_dragging .mm-slideout {
+  -webkit-transition-duration: 0s !important;
+          transition-duration: 0s !important;
+}
+/*# sourceMappingURL=mmenu.drag.css.map */

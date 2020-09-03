@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,mBAAmB,CAAC;EAChB,UAAU,EAAE,IAAI,CGFI,IAAI,CAEJ,IAAI;EHCxB,mBAAmB,EAAE,iBAAiB;CAUzC;;AAZD,AAII,mBAJe,AAId,IAAK,CAAA,kBAAkB,EAAE;EACtB,QAAQ,EAAE,QAAQ;CACrB;;AANL,AAQI,mBARe,AAQd,qBAAqB,EAR1B,mBAAmB,AASd,wBAAwB,CAAC;EACtB,UAAU,EAAE,GAA0B;CACzC;;AAGL,AACI,6BADyB,CACzB,SAAS,CAAC;EACN,OAAO,EAAE,gBAAgB;CAC5B;;AAHL,AAMQ,6BANqB,CAMrB,qBAAqB,AAAA,IAAK,CAAA,mBAAmB,EAAE,SAAS,CAAC;EACrD,OAAO,EAAE,eAAe;CAC3B;;AART,AAWI,6BAXyB,CAWzB,UAAU,GAAG,SAAS,CAAC;EACnB,MAAM,EAAE,eAAe;EACvB,MAAM,EAAE,eAAe;CAC1B",
+    "sources": [
+        "mmenu.autoheight.scss",
+        "../../_mixins.scss",
+        "../../_includes.scss",
+        "../../_variables.scss"
+    ],
+    "names": [],
+    "file": "mmenu.autoheight.css"
+}
