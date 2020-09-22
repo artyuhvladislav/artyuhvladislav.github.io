@@ -236,7 +236,7 @@ h2 {
 }
 
 .income .item__value,
-.income .item__delete--btn {
+.income  {
     color: #28B9B5;
 }
 
@@ -252,13 +252,15 @@ h2 {
 }
 
 .item__delete--btn {
-    font-size: 22px;
+    font-size: 15px;
+    padding-top: 3px;
     background: none;
     border: none;
     cursor: pointer;
     display: inline-block;
     vertical-align: middle;
     line-height: 1;
+    color: #FF5049;
     display: none;
 }
 

@@ -61,8 +61,8 @@ function createElement(){
             <div class="right clearfix">
                 <div class="item__value">${addValue.value}</div>
                 <div class="item__delete">
-                    <button class="item__delete--btn">
-                        <i class="ion-ios-close-outline" id = "income-del-${currentIncome}"></i>
+                    <button class="item__delete--btn" id = "income-del-${currentIncome}">
+                        delete
                     </button>
                 </div>
             </div>
