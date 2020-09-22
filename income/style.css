@@ -155,9 +155,11 @@ body {
 .add__value { width: 100px;}
 
 .add__btn {
-    font-size: 35px;
+    border: 1px solid #28B9B5;
+    width: 50px;
+    height: 40px;
+    font-size: 15px;
     background: none;
-    border: none;
     color: #28B9B5;
     cursor: pointer;
     display: inline-block;
