@@ -192,6 +192,10 @@ header a:hover {
 	.main-title{
 		font-size: 25px;
 	}
+	.tab-content {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
 	.tabs .container {
 		width: 80%;
 	}
@@ -230,7 +234,13 @@ header a:hover {
 		margin: 40px 0 40px;
 		color:#d7d7d7;
 	}
-	
+	.tabs .container {
+		width: 90%;
+	}
+	.tab-content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	.content {
 		order: -1;
 		margin: 0 auto;
