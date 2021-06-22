@@ -1,42 +1,30 @@
 
-@font-face{
-	font-family:"Monaco";
-	src: url(fonts/Monaco.ttf);
-}
-
 body{
-	background: #222;
-	font-family:"Monaco", sans-serif;
+	background: #29292b;
+	font-family: 'Roboto Mono', monospace;
+	color: #aaa9a9;
 }
 header{
 	display: flex;
 	flex-direction: column;
 	justify-content:  center;
-	padding-top: 40px;
+	padding-top: 30px;
 }
 header img {
 	width: 200px;
 	border-radius: 50%;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 header a:hover {
 	color:#e7c860;
 }	
 .main-container{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content:  center;
-	width: 70%;
 	margin: 0 auto;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	background: #191919;
-	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 1);
+	background: #29292b;
 }
 .main-title{
-	font-size: 40px;
-	margin-bottom: 50px;
+	font-size: 30px;
+	margin-bottom: 30px;
 	color:#3df487;
 	text-align: center;
 }
@@ -45,18 +33,61 @@ header a:hover {
 	justify-content: center;
 }
 .description{
-	font-size: 20px;
+	font-size: 16px;
+	line-height: 25px;
+	padding-right: 100px;
+	padding-left: 100px;
+	margin-bottom: 10px;
+}
+.description-code, .code {
+	color:#3df487;
+}
+.description-code span {
 	color:#d7d7d7;
-	max-width: 800px;
-	line-height: 1.5;
+}
+.code-body {
+	margin-left: 20px;
+	/* color:#d7d7d7; */
+}
+.link {
+	color:#e7c860;
+	text-decoration: none;
+}
+
+
+/* ----------- tabs ---------- */
+.container {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+.tab-content {
+	min-height: 40vh;
 	padding-right: 100px;
 	padding-left: 100px;
 }
-p span{
-	color:#e7c860;
+.tab-content-item {
+	width: 100%;
 }
-.highlight{
-	color:#3df487;
+.tab-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 220px;
+	margin-right: 10px;
+	padding: 10px 5px;
+	font-size: 16px;
+	cursor: pointer;
+    background:#222;
+}
+.active {
+    background: #3df487;
+}
+.tab-content-item {
+    display: none;
+}
+.show {
+    display: block;
 }
 
 /*-------------- portfolio section---------------*/
@@ -66,9 +97,7 @@ p span{
 }
 .portfolio-container{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	
+	flex-wrap: wrap;	
 	margin: 0 auto;
 	width: 80%;
 	
@@ -85,12 +114,20 @@ p span{
 	opacity: 1;
 }
 .title{
-	font-size: 25px;
+	font-size: 18px;
 	text-align: center;
 	margin: 40px 0 40px;
 	color:#d7d7d7;
 }
 
+.tab-item.active{
+	color: #fff;
+}
+.navlogo {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
 /*-------------- card section ---------------*/
 .card {
 	margin-bottom: 30px;
@@ -100,26 +137,32 @@ p span{
     transition: 0.5s;
 	cursor: pointer;
 	display: flex;
-    justify-content: center;
+	align-items: center;
     box-sizing: border-box;
 	text-decoration: none;
 }
 
 .card-description h3{
-	color:#d7d7d7;
-	font-weight: 600;
-	text-align: center;
+	color: #aaa9a9;
+	font-size: 17px;
 }
 .card-description p {
-	color:#d7d7d7;
+	color: #aaa9a9;
 }
 .content {
 	margin-right: 20px;
+	max-width: 150px;
+	max-height: 150px;
+    border-radius: 50%;
+	overflow: hidden;
 }
 .content img{
+	display: block;
 	opacity: 0.3;
-	width: 333px;
-	height: 220px;
+	
+	
+	/* width: 200px;
+	height: 200px; */
 }
 /*-------------- portfolio section finish---------------*/
 
@@ -129,6 +172,13 @@ p span{
 		margin-bottom: 0px;
 		margin-top: 0px;
 		box-shadow: none;
+	}
+	.tabs .container {
+		display: block;
+		width: 50%;
+	}
+	.tab-item {
+		margin-bottom: 15px;
 	}
 }
 
@@ -142,21 +192,26 @@ p span{
 	.main-title{
 		font-size: 25px;
 	}
+	.tabs .container {
+		width: 80%;
+	}
 	.card a {
 		flex-wrap: wrap;
 	}
+	.content {
+		order: -1;
+		margin: 0 auto;
+	}
 	.description{
-		font-size: 16px;
+		font-size: 14px;
 		padding-right: 50px;
 		padding-left: 50px;
 	}
 	.title {
 		font-size: 20px;
-		margin: 40px 0 20px;
+		margin: 40px 0 40px;
 	}
-	.content {
-		order: 1;
-	}
+	
 }
 
 @media only screen and (max-width : 480px) {
@@ -170,20 +225,21 @@ p span{
 		padding-left: 20px;
 	}
 	.title{
-		font-size: 25px;
+		font-size: 20px;
 		text-align: center;
-		margin: 40px 0 20px;
+		margin: 40px 0 40px;
 		color:#d7d7d7;
 	}
 	
 	.content {
-		margin-right: 0;
+		order: -1;
+		margin: 0 auto;
 	}
 	.content img{
 		width: 280px;
 	}
 	.card-description p {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	
 }

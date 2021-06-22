@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" href="main.css">
@@ -19,214 +21,246 @@
         <img src="./img/ava.jpg" alt="logo">
       </div>
 
-      <p class="description">
-        <span>&#123;</span>
-          Hello, my name is Vlad and I'm junior front-end developer.
-          I'm creating different websites. You can see a few of them in my 
-          <a href="#portfolio" class="highlight">#portfolio</a>
-        <span> &#125;</span>
-      </p>
+      <div class="description">
+        <p class="description-code">const name = '<span>Vladislav Artyuh</span>';</p>
+      </div>
+      <div class="description highlight-color">
+        <p class="description-code">const code = () =&gt; {</p>
+        <p class="code-body"><span class="code">return '</span>Hello, my name is Vlad and I'm junior front-end developer. 
+          I'm from Belarus but now living in Poland.
+          I'm creating different websites using pure js and for SPA React and Redux. You can see a few of them in my 
+          <a href="#portfolio" class="link">#portfolio</a><span class="code">';</span></p>
+        <p class="description-code">}</p>
+      </div>
 
-      <p class="description">
-        <span>&#123;</span>
-          I'm trying to improve my skills everyday.
-          At this moment have good skills at : 
-          <span class="highlight">JS, React, Jquery, Bootstrap</span>
-        <span> &#125;</span>
-      </p>
+      <div class="description highlight-color">
+        <p class="description-code">const skills = () =&gt; {</p>
+        <p class="code-body"><span class="code">return '</span>I am trying to improve my code skills everyday, find out new variants for solving code problems.
+          At this moment I have good skills at :
+          <span class="link">JS, React, Redux</span>.<span class="code">';</span>
+        </p>
+        <p class="description-code">}</p>
+      </div>
 
-      <p class="description"><span>&#123;</span> My links for contact: 
-          <a  class = "highlight" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=workto22@gmail.com"
-          target="_blank">@gmail</a>
-          <a  class = "highlight" href="https://t.me/tvlad_ivanov" target="_blank">telegram</a>
-          <a  class = "highlight" href="https://github.com/artyuhvladislav" target="_blank">github</a>
-        <span> &#125;</span>
-      </p>
-
+      <div class="description highlight-color">
+        <p class="description-code">const links = () =&gt; {</p>
+        <p class="code-body"><span class="code">return '</span>
+          <a class="link" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&source=mailto&to=workto22@gmail.com"
+            target="_blank">@gmail</a>
+          <a class="link" href="https://t.me/tvlad_ivanov" target="_blank">telegram</a>
+          <a class="link" href="https://github.com/artyuhvladislav" target="_blank">github</a>'
+        </p>
+        <p class="description-code">}</p>
+      </div>
     </header>
 
-    <section class="portfolio" id="portfolio">
-      <h2 class="title">Old projects</h2>
-      <div class="portfolio-container">
-
-        <div class="card">
-          <a href="site2/wooder.html" target="_blank">
-            <div class="content">
-                <img src="img/site1.jpg" alt="wooder">
-            </div>
-            <div class="card-description">
-              <h3>Wooder</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="todoApp/index.html" target="_blank">
-            <div class="content">
-              <img src="img/todo.png" alt="todo">
-            </div>
-            <div class="card-description">
-              <h3>Todo app</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="site1/index.html" target="_blank">
-            <div class="content">
-              <img src="./img/site2.jpg" alt="eltec">
-            </div>
-            <div class="card-description">
-              <h3>Eltehno</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="site4/index.html" target="_blank">
-            <div class="content">
-              <img src="img/site4.jpg" alt="netflix">
-            </div>
-            <div class="card-description">
-              <h3>Netflix</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="site5/index.html" target="_blank">
-            <div class="content">
-              <img src="img/free.jpg" alt="free">
-            </div>
-            <div class="card-description">
-              <h3>FreeBuy</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-        
-        <div class="card">
-          <a href="site6/index.html" target="_blank">
-            <div class="content">
-              <img src="img/frontal.jpg" alt="frontal">
-            </div>
-            <div class="card-description">
-              <h3>Frontal</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-        
-        <div class="card">
-          <a href="nike/index.html" target="_blank">
-            <div class="content">
-              <img src="img/nike.jpg" alt="nike">
-            </div>
-            <div class="card-description">
-              <h3>Nike</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="forkify/index.html" target="_blank">
-            <div class="content">
-              <img src="img/forkify.jpg" alt="forkify">
-            </div>
-            <div class="card-description">
-              <h3>Forkify</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-        
-        <div class="card">
-          <a href="starter/index.html" target="_blank">
-            <div class="content">
-              <img src="img/dice.jpg" alt="dice">
-            </div>
-            <div class="card-description">
-              <h3>Dice</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-
-        <div class="card">
-          <a href="beats/index-START.html" target="_blank">
-            <div class="content">
-              <img src="img/beats.jpg" alt="beats">
-            </div>
-            <div class="card-description">
-              <h3>Beats</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-       
-        <div class="card">
-          <a href="/income/index.html" target="_blank">
-            <div class="content">
-              <img src="img/income.jpg" alt="income">
-            </div>
-            <div class="card-description">
-              <h3>Income App</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aspernatur, quaerat ullam. Consectetur nobis itaque ex 
-                ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
-                fugiat ad. Quisquam minus doloremque perspiciatis.
-              </p>
-            </div>
-          </a>
-        </div>
-        
+    <section class="tabs">
+      <div class="container">
+        <div id="tab-1" class="tab-item active "><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAB0ElEQVRYhe3XP2tTURzG8d+pOoh/iiAUiyCIgiYRHOq7cPEFZHHooG9AcXLxRYjiIIqIu84OuggqtgVBRKmaugguImj7cbCFm/Tcm5vkpos+6+8+z/PNSXLOPRH/ulLVELsi4lxEzEXEckrpXZ1QnIyIVkSsRcSLlNL6yGTo4JV+PcC+Cs9+3BrwvMXZUctn8VFeNyt8t0s8n3BoFICrJUGwgeMZz4kKD1zJdc2UMLQq+FLJ/PSQz5XNLAP4PCQsN++N4ckLZ7BespSvsQ0cM1gq8fxGuzbAZuClTWNRX1C61GijlylfHKm8ENgqBD3DwRqeefzc9HzAqbHKC4Fbeljj2T24V/Bcn6h8FABcwErh+VXMDsvfPSHcXER0I+Ji9P8N1yLifErp+yT5WyV9K4C96OIxfmV+8Y8wP3FxBuAJruFrpvQH7mKhseIMwKA28BSLdb7rJgG+4QaOTa20AuAODuxIcQbg+TTyyw6jnFZ3HED/AXJUja24MeGy7YdRD1XvCo2Vd5Qfx29kjuNxVRbUrZh1ImK0l8wxAI4M8TW21ZYBrFR4DJlPLhyW3/Ph/lTLCxBtvBwsV3ExGUd1rmYL8fdqtpRSet9k+X9FRPwBz77nfaqUXy0AAAAASUVORK5CYII="
+            alt="Home" class="navlogo">Current project</div>
+        <div id="tab-2" class="tab-item"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAB0ElEQVRYhe3XP2tTURzG8d+pOoh/iiAUiyCIgiYRHOq7cPEFZHHooG9AcXLxRYjiIIqIu84OuggqtgVBRKmaugguImj7cbCFm/Tcm5vkpos+6+8+z/PNSXLOPRH/ulLVELsi4lxEzEXEckrpXZ1QnIyIVkSsRcSLlNL6yGTo4JV+PcC+Cs9+3BrwvMXZUctn8VFeNyt8t0s8n3BoFICrJUGwgeMZz4kKD1zJdc2UMLQq+FLJ/PSQz5XNLAP4PCQsN++N4ckLZ7BespSvsQ0cM1gq8fxGuzbAZuClTWNRX1C61GijlylfHKm8ENgqBD3DwRqeefzc9HzAqbHKC4Fbeljj2T24V/Bcn6h8FABcwErh+VXMDsvfPSHcXER0I+Ji9P8N1yLifErp+yT5WyV9K4C96OIxfmV+8Y8wP3FxBuAJruFrpvQH7mKhseIMwKA28BSLdb7rJgG+4QaOTa20AuAODuxIcQbg+TTyyw6jnFZ3HED/AXJUja24MeGy7YdRD1XvCo2Vd5Qfx29kjuNxVRbUrZh1ImK0l8wxAI4M8TW21ZYBrFR4DJlPLhyW3/Ph/lTLCxBtvBwsV3ExGUd1rmYL8fdqtpRSet9k+X9FRPwBz77nfaqUXy0AAAAASUVORK5CYII="
+            alt="Home" class="navlogo">New projects</div>
+        <div id="tab-3" class="tab-item"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAAB0ElEQVRYhe3XP2tTURzG8d+pOoh/iiAUiyCIgiYRHOq7cPEFZHHooG9AcXLxRYjiIIqIu84OuggqtgVBRKmaugguImj7cbCFm/Tcm5vkpos+6+8+z/PNSXLOPRH/ulLVELsi4lxEzEXEckrpXZ1QnIyIVkSsRcSLlNL6yGTo4JV+PcC+Cs9+3BrwvMXZUctn8VFeNyt8t0s8n3BoFICrJUGwgeMZz4kKD1zJdc2UMLQq+FLJ/PSQz5XNLAP4PCQsN++N4ckLZ7BespSvsQ0cM1gq8fxGuzbAZuClTWNRX1C61GijlylfHKm8ENgqBD3DwRqeefzc9HzAqbHKC4Fbeljj2T24V/Bcn6h8FABcwErh+VXMDsvfPSHcXER0I+Ji9P8N1yLifErp+yT5WyV9K4C96OIxfmV+8Y8wP3FxBuAJruFrpvQH7mKhseIMwKA28BSLdb7rJgG+4QaOTa20AuAODuxIcQbg+TTyyw6jnFZ3HED/AXJUja24MeGy7YdRD1XvCo2Vd5Qfx29kjuNxVRbUrZh1ImK0l8wxAI4M8TW21ZYBrFR4DJlPLhyW3/Ph/lTLCxBtvBwsV3ExGUd1rmYL8fdqtpRSet9k+X9FRPwBz77nfaqUXy0AAAAASUVORK5CYII="
+            alt="Home" class="navlogo">First experience(layout & js stuff)</div>
       </div>
     </section>
+    
+    <section class="tab-content">
+      <div class="container">
+        <!--tab-1 section-->
+        <div id="tab-1-content" class="tab-content-item show">
+          <section class="portfolio" id="portfolio">
+            <h2 class="title">Current project</h2>
+            <div class="portfolio-container">
+
+              <div class="card">
+                <a href="site2/wooder.html" target="_blank">
+                  <div class="content">
+                    <img src="img/site1.jpg" alt="wooder">
+                  </div>
+                  <div class="card-description">
+                    <h3>Wooder</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Aspernatur, quaerat ullam. Consectetur nobis itaque ex
+                      ipsum aperiam dolor quia, reprehenderit nam illum nemo debitis
+                      fugiat ad. Quisquam minus doloremque perspiciatis.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!--tab-2 section-->
+        <div id="tab-2-content" class="tab-content-item">
+          <section class="portfolio" id="portfolio">
+            <h2 class="title">New projects</h2>
+            <div class="portfolio-container">
+
+              <div class="card">
+                <a href="http://react-pizza-prjct.herokuapp.com/" target="_blank">
+                  <div class="content">
+                    <img src="img/pizza.jpg" alt="Pizza">
+                  </div>
+                  <div class="card-description">
+                    <h3>Pizza store</h3>
+                    <p>It's a react app with fake json-server data. Stack React, Redux, json-server.
+                    </p>
+                  </div>
+                </a>
+                <a  class="link" href="https://github.com/artyuhvladislav/pizza">github repository link</a>
+              </div>
+
+            </div>
+          </section>
+        </div>
+        <!--tab-3 section-->
+        <div id="tab-3-content" class="tab-content-item">
+          <section class="portfolio" id="portfolio">
+            <h2 class="title">Old projects</h2>
+            <div class="portfolio-container">
+
+              <div class="card">
+                <a href="site2/wooder.html" target="_blank">
+                  <div class="content">
+                    <img src="img/site1.jpg" alt="wooder">
+                  </div>
+                  <div class="card-description">
+                    <h3>Wooder</h3>
+                    <p>Simple example of layout  HTML, CSS, JS no responsive.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="todoApp/index.html" target="_blank">
+                  <div class="content">
+                    <img src="img/todo.png" alt="todo">
+                  </div>
+                  <div class="card-description">
+                    <h3>Todo app</h3>
+                    <p>It's a cute to do app where you can write your task for a day. At this project were using HTM, CSS, JS, DOM manipulation.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="site1/index.html" target="_blank">
+                  <div class="content">
+                    <img src="./img/site2.jpg" alt="eltec">
+                  </div>
+                  <div class="card-description">
+                    <h3>Eltehno</h3>
+                    <p>It's a cool responsive site for electehno company. Stack of the 
+                      technologies: HTML, SCSS, JS.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="site4/index.html" target="_blank">
+                  <div class="content">
+                    <img src="img/site4.jpg" alt="netflix">
+                  </div>
+                  <div class="card-description">
+                    <h3>Netflix</h3>
+                    <p>It's a clone of Netflix, at this project you can see example of pagination. Stack: HTML, CSS, JS.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="site5/index.html" target="_blank">
+                  <div class="content">
+                    <img src="img/free.jpg" alt="free">
+                  </div>
+                  <div class="card-description">
+                    <h3>FreeBuy</h3>
+                    <p>Small internet-store, responsive site using HTML, CSS, JS.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="site6/index.html" target="_blank">
+                  <div class="content">
+                    <img src="img/frontal.jpg" alt="frontal">
+                  </div>
+                  <div class="card-description">
+                    <h3>Frontal</h3>
+                    <p>Site where you can see examples of cool pop-ups and owl-carousel. HTML, CSS, JS, Jquery.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="forkify/index.html" target="_blank">
+                  <div class="content">
+                    <img src="img/forkify.jpg" alt="forkify">
+                  </div>
+                  <div class="card-description">
+                    <h3>Forkify</h3>
+                    <p>Recipe app. Example of getting data from the server using JS.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="starter/index.html" target="_blank">
+                  <div class="content">
+                    <img src="img/dice.jpg" alt="dice">
+                  </div>
+                  <div class="card-description">
+                    <h3>Dice</h3>
+                    <p>Small game on javascript.
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="beats/index-START.html" target="_blank">
+                  <div class="content">
+                    <img src="img/beats.jpg" alt="beats">
+                  </div>
+                  <div class="card-description">
+                    <h3>Beats</h3>
+                    <p>Music application example of adding music to the page. Stack: HTML, CSS, JS
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card">
+                <a href="/income/index.html" target="_blank">
+                  <div class="content">
+                    <img src="img/income.jpg" alt="income">
+                  </div>
+                  <div class="card-description">
+                    <h3>Income App</h3>
+                    <p>Application for your incomes. HTML, CSS, JS
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+      </div>
+    </section>
+
   </main>
   <script type="text/javascript" src="main.js"></script>
 </body>

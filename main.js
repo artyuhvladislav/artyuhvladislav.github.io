@@ -1,9 +1,22 @@
+const tabItems = document.querySelectorAll('.tab-item');
+const tabContentItems = document.querySelectorAll('.tab-content-item');
 
-// let hiddenElement = document.getElementById("links");
-// let btn = document.querySelector('.button-contact');
+function selectItem() {
 
-// function handleButtonClick() {
-//    hiddenElement.scrollIntoView({block: "center", behavior: "smooth"});
-// }
+    tabContentItems.forEach(item => {
+		item.classList.remove('show');
+	}); 
 
-// btn.addEventListener('click', handleButtonClick);
+    tabItems.forEach(item => {
+		item.classList.remove('active');
+	});
+
+    this.classList.add('active');
+
+    const tabContentItem = document.querySelector(`#${this.id}-content`);
+    
+	tabContentItem.classList.add('show');
+}
+tabItems.forEach(item => {
+	item.addEventListener('click', selectItem);
+});
