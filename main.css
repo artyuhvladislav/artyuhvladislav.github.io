@@ -97,7 +97,7 @@ header a:hover {
 }
 .portfolio-container{
 	display: flex;
-	flex-wrap: wrap;	
+	flex-direction: column;	
 	margin: 0 auto;
 	width: 80%;
 	
@@ -131,6 +131,7 @@ header a:hover {
 /*-------------- card section ---------------*/
 .card {
 	margin-bottom: 30px;
+	max-width: 80%;
 }
 .card a {
 	min-height: 100px;
@@ -180,6 +181,9 @@ header a:hover {
 	.tab-item {
 		margin-bottom: 15px;
 	}
+	.card {
+		max-width: 100%;
+	}
 }
 
 @media only screen and (max-width : 762px) {
@@ -199,8 +203,13 @@ header a:hover {
 	.tabs .container {
 		width: 80%;
 	}
+
 	.card a {
-		flex-wrap: wrap;
+		display: flex;
+		flex-direction: column;
+	}
+	.card-description {
+		width: 100%;
 	}
 	.content {
 		order: -1;
