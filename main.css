@@ -19,6 +19,7 @@ header a:hover {
 	color:#e7c860;
 }	
 .main-container{
+	max-width: 1440px;
 	margin: 0 auto;
 	background: #29292b;
 }
